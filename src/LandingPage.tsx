@@ -454,7 +454,7 @@ function HeroSection() {
                 borderRadius: 14,
                 padding: "10px 14px",
                 boxShadow: "0 8px 30px rgba(44,24,16,0.14)",
-                border: "1px solid rgba(44,24,16,0.06)",
+                border: "1px solid rgba(44,24,16,0.16)",
                 minWidth: 130,
               }}
             >
@@ -474,7 +474,7 @@ function HeroSection() {
                 borderRadius: 12,
                 padding: "8px 12px",
                 boxShadow: "0 8px 24px rgba(44,24,16,0.12)",
-                border: "1px solid rgba(44,24,16,0.06)",
+                border: "1px solid rgba(44,24,16,0.16)",
               }}
             >
               <div style={{ fontSize: 16 }}>⭐ 4.9</div>
@@ -525,7 +525,7 @@ function FeaturesSection() {
                 }}
                 onMouseLeave={(e) => {
                   (e.currentTarget as HTMLDivElement).style.transform = "translateY(0)";
-                  (e.currentTarget as HTMLDivElement).style.boxShadow = "0 4px 28px rgba(44,24,16,0.10), 0 1px 4px rgba(44,24,16,0.06)";
+                  (e.currentTarget as HTMLDivElement).style.boxShadow = "0 4px 28px rgba(44,24,16,0.13), 0 1px 4px rgba(44,24,16,0.09)";
                 }}
               >
                 <div style={{
@@ -646,10 +646,10 @@ function ProposeSection() {
               {t.propose.stats.map((stat, i) => (
                 <div key={i} style={{
                   background: "#fff",
-                  border: "1.5px solid rgba(44,24,16,0.08)",
+                  border: "1.5px solid rgba(44,24,16,0.18)",
                   borderRadius: 16, padding: "18px 28px",
                   minWidth: 130, textAlign: "center",
-                  boxShadow: "0 2px 16px rgba(44,24,16,0.06)",
+                  boxShadow: "0 2px 16px rgba(44,24,16,0.10)",
                 }}>
                   <div style={{ fontSize: 28, fontWeight: 900, color: "#D32F2F", letterSpacing: "-0.03em", marginBottom: 4 }}>
                     {stat.value}

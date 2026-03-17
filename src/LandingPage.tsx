@@ -492,7 +492,7 @@ function FeaturesSection() {
   return (
     <section id="features" style={{
       padding: "100px 24px",
-      background: "rgba(44,24,16,0.02)",
+      background: "#EDE3D8",
     }}>
       <div style={{ maxWidth: 1100, margin: "0 auto" }}>
         <FadeIn style={{ textAlign: "center", marginBottom: 56 }}>
@@ -525,7 +525,7 @@ function FeaturesSection() {
                 }}
                 onMouseLeave={(e) => {
                   (e.currentTarget as HTMLDivElement).style.transform = "translateY(0)";
-                  (e.currentTarget as HTMLDivElement).style.boxShadow = "0 2px 24px rgba(44,24,16,0.06)";
+                  (e.currentTarget as HTMLDivElement).style.boxShadow = "0 4px 28px rgba(44,24,16,0.10), 0 1px 4px rgba(44,24,16,0.06)";
                 }}
               >
                 <div style={{
@@ -555,7 +555,7 @@ function FeaturesSection() {
 function HowItWorksSection() {
   const { t, isRtl } = useLanguage();
   return (
-    <section id="how-it-works" style={{ padding: "100px 24px" }}>
+    <section id="how-it-works" style={{ padding: "100px 24px", background: "#E8DDD3" }}>
       <div style={{ maxWidth: 1100, margin: "0 auto" }}>
         <FadeIn style={{ textAlign: "center", marginBottom: 64 }}>
           <span className="section-label">{t.howItWorks.sectionLabel}</span>

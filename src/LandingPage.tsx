@@ -1002,7 +1002,7 @@ function Footer() {
 
 export default function LandingPage() {
   return (
-    <div style={{ minHeight: "100vh", background: "#FAF8F4" }}>
+    <div style={{ minHeight: "100vh", background: "#FCFCF7" }}>
       <Navbar />
       <main>
         <HeroSection />

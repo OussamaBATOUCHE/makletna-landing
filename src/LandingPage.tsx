@@ -762,7 +762,7 @@ function RegisterSection() {
       payload.append("_captcha", "false");
       payload.append("_template", "table");
 
-      const res = await fetch("https://formsubmit.co/ossama12batouche@gmail.com", {
+      const res = await fetch("https://formsubmit.co/contact@makletna.com", {
         method: "POST",
         body: payload,
       });

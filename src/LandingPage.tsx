@@ -23,78 +23,6 @@ const ICON_MAP: Record<string, React.ReactNode> = {
   heart: <Heart size={22} />,
 };
 
-const WILAYAS = [
-  { code: "01", en: "Adrar", ar: "أدرار" },
-  { code: "02", en: "Chlef", ar: "الشلف" },
-  { code: "03", en: "Laghouat", ar: "الأغواط" },
-  { code: "04", en: "Oum El Bouaghi", ar: "أم البواقي" },
-  { code: "05", en: "Batna", ar: "باتنة" },
-  { code: "06", en: "Bejaia", ar: "بجاية" },
-  { code: "07", en: "Biskra", ar: "بسكرة" },
-  { code: "08", en: "Bechar", ar: "بشار" },
-  { code: "09", en: "Blida", ar: "البليدة" },
-  { code: "10", en: "Bouira", ar: "البويرة" },
-  { code: "11", en: "Tamanrasset", ar: "تمنراست" },
-  { code: "12", en: "Tebessa", ar: "تبسة" },
-  { code: "13", en: "Tlemcen", ar: "تلمسان" },
-  { code: "14", en: "Tiaret", ar: "تيارت" },
-  { code: "15", en: "Tizi Ouzou", ar: "تيزي وزو" },
-  { code: "16", en: "Alger", ar: "الجزائر" },
-  { code: "17", en: "Djelfa", ar: "الجلفة" },
-  { code: "18", en: "Jijel", ar: "جيجل" },
-  { code: "19", en: "Setif", ar: "سطيف" },
-  { code: "20", en: "Saida", ar: "سعيدة" },
-  { code: "21", en: "Skikda", ar: "سكيكدة" },
-  { code: "22", en: "Sidi Bel Abbes", ar: "سيدي بلعباس" },
-  { code: "23", en: "Annaba", ar: "عنابة" },
-  { code: "24", en: "Guelma", ar: "قالمة" },
-  { code: "25", en: "Constantine", ar: "قسنطينة" },
-  { code: "26", en: "Medea", ar: "المدية" },
-  { code: "27", en: "Mostaganem", ar: "مستغانم" },
-  { code: "28", en: "M'sila", ar: "المسيلة" },
-  { code: "29", en: "Mascara", ar: "معسكر" },
-  { code: "30", en: "Ouargla", ar: "ورقلة" },
-  { code: "31", en: "Oran", ar: "وهران" },
-  { code: "32", en: "El Bayadh", ar: "البيض" },
-  { code: "33", en: "Illizi", ar: "إليزي" },
-  { code: "34", en: "Bordj Bou Arreridj", ar: "برج بوعريريج" },
-  { code: "35", en: "Boumerdes", ar: "بومرداس" },
-  { code: "36", en: "El Tarf", ar: "الطارف" },
-  { code: "37", en: "Tindouf", ar: "تندوف" },
-  { code: "38", en: "Tissemsilt", ar: "تيسمسيلت" },
-  { code: "39", en: "El Oued", ar: "الوادي" },
-  { code: "40", en: "Khenchela", ar: "خنشلة" },
-  { code: "41", en: "Souk Ahras", ar: "سوق أهراس" },
-  { code: "42", en: "Tipaza", ar: "تيبازة" },
-  { code: "43", en: "Mila", ar: "ميلة" },
-  { code: "44", en: "Ain Defla", ar: "عين الدفلى" },
-  { code: "45", en: "Naama", ar: "النعامة" },
-  { code: "46", en: "Ain Temouchent", ar: "عين تموشنت" },
-  { code: "47", en: "Ghardaia", ar: "غرداية" },
-  { code: "48", en: "Relizane", ar: "غليزان" },
-  { code: "49", en: "Timimoun", ar: "تيميمون" },
-  { code: "50", en: "Bordj Badji Mokhtar", ar: "برج باجي مختار" },
-  { code: "51", en: "Ouled Djellal", ar: "أولاد جلال" },
-  { code: "52", en: "Beni Abbes", ar: "بني عباس" },
-  { code: "53", en: "In Salah", ar: "عين صالح" },
-  { code: "54", en: "In Guezzam", ar: "عين قزام" },
-  { code: "55", en: "Touggourt", ar: "تقرت" },
-  { code: "56", en: "Djanet", ar: "جانت" },
-  { code: "57", en: "El M'Ghair", ar: "المغير" },
-  { code: "58", en: "El Meniaa", ar: "المنيعة" },
-  { code: "59", en: "Aflou", ar: "أفلو" },
-  { code: "60", en: "Barika", ar: "بريكة" },
-  { code: "61", en: "Ksar Chellala", ar: "قصر الشلالة" },
-  { code: "62", en: "Messaad", ar: "مسعد" },
-  { code: "63", en: "Ain Oussera", ar: "عين وسارة" },
-  { code: "64", en: "Boussaada", ar: "بوسعادة" },
-  { code: "65", en: "El Abiodh Sidi Cheikh", ar: "الأبيض سيدي الشيخ" },
-  { code: "66", en: "El Kantara", ar: "القنطرة" },
-  { code: "67", en: "Bir El Ater", ar: "بئر العاتر" },
-  { code: "68", en: "Ksar El Boukhari", ar: "قصر البخاري" },
-  { code: "69", en: "El Aricha", ar: "العريشة" },
-];
-
 function AppStoreBadge() {
   return (
     <a
@@ -113,13 +41,16 @@ function AppStoreBadge() {
       >
         <rect width="135" height="40" rx="7" fill="#1A1A1A" />
         <rect x="0.5" y="0.5" width="134" height="39" rx="6.5" fill="none" stroke="rgba(255,255,255,0.15)" />
+        {/* Apple logo */}
         <path
           d="M19.5 10.1c-.8 1-2.1 1.8-3.4 1.6-.2-1.3.5-2.7 1.2-3.6.8-1 2.2-1.7 3.3-1.8.2 1.4-.4 2.8-1.1 3.8zm1.1 1.7c-1.9-.1-3.5 1.1-4.4 1.1-.9 0-2.3-1-3.8-1-2 0-3.8 1.1-4.8 2.9-2.1 3.6-.5 8.9 1.5 11.8 1 1.4 2.2 3 3.7 3 1.5-.1 2-.9 3.8-.9 1.8 0 2.3.9 3.8.9 1.6 0 2.6-1.4 3.6-2.8 1.1-1.6 1.6-3.2 1.6-3.3-.1 0-3-1.2-3-4.6 0-2.9 2.3-4.2 2.5-4.4-1.4-2-3.5-2.2-4.1-2.2l-.4.5z"
           fill="white"
         />
+        {/* "Download on the" */}
         <text x="31" y="16" fontFamily="'Helvetica Neue',Helvetica,Arial,sans-serif" fontSize="8" fill="white" fontWeight="400" letterSpacing="0.3">
           Download on the
         </text>
+        {/* "App Store" */}
         <text x="31" y="29" fontFamily="'Helvetica Neue',Helvetica,Arial,sans-serif" fontSize="14.5" fill="white" fontWeight="600" letterSpacing="-0.3">
           App Store
         </text>
@@ -146,13 +77,16 @@ function GooglePlayBadge() {
       >
         <rect width="135" height="40" rx="7" fill="#1A1A1A" />
         <rect x="0.5" y="0.5" width="134" height="39" rx="6.5" fill="none" stroke="rgba(255,255,255,0.15)" />
+        {/* Google Play triangle (simplified colorful logo) */}
         <path d="M8.7 8.1c-.4.4-.6 1-.6 1.8v20.4c0 .8.2 1.4.6 1.8l.1.1 11.4-11.4v-.3L8.8 8z" fill="#00CFD5" />
         <path d="M23.9 24.3l-3.8-3.8v-.3l3.8-3.8.1.1 4.5 2.6c1.3.7 1.3 1.9 0 2.6l-4.5 2.6-.1.1z" fill="#FFBC00" />
         <path d="M24 24.2L20.1 20.3 8.7 31.7c.4.5 1.1.5 1.9.1L24 24.2z" fill="#F4433C" />
         <path d="M24 16.4L10.6 9.2c-.8-.5-1.5-.4-1.9.1L20.1 19.7 24 16.4z" fill="#00EE76" />
+        {/* "GET IT ON" */}
         <text x="31" y="16" fontFamily="'Helvetica Neue',Helvetica,Arial,sans-serif" fontSize="8" fill="white" fontWeight="400" letterSpacing="0.5">
           GET IT ON
         </text>
+        {/* "Google Play" */}
         <text x="31" y="29" fontFamily="'Helvetica Neue',Helvetica,Arial,sans-serif" fontSize="14.5" fill="white" fontWeight="600" letterSpacing="-0.3">
           Google Play
         </text>
@@ -193,6 +127,7 @@ function PhoneMockup() {
     <div className="phone-mockup">
       <div className="phone-notch" />
       <div className="phone-screen">
+        {/* App top bar */}
         <div style={{
           background: "#D32F2F",
           padding: "28px 14px 12px",
@@ -204,6 +139,7 @@ function PhoneMockup() {
           <span style={{ color: "#fff", fontSize: 13, fontWeight: 800, letterSpacing: "-0.01em" }}>Makletna</span>
         </div>
 
+        {/* Search bar */}
         <div style={{ padding: "10px 12px 6px" }}>
           <div style={{
             background: "#f2ede7",
@@ -220,6 +156,7 @@ function PhoneMockup() {
           </div>
         </div>
 
+        {/* Category pills */}
         <div style={{ padding: "4px 12px", display: "flex", gap: 5, overflowX: "hidden" }}>
           {["🍲 Couscous", "🥗 Salade", "🍖 Grillé"].map((c, i) => (
             <div key={i} style={{
@@ -235,6 +172,7 @@ function PhoneMockup() {
           ))}
         </div>
 
+        {/* Kitchen cards */}
         <div style={{ padding: "6px 12px", display: "flex", flexDirection: "column", gap: 8 }}>
           {[
             { name: "Cuisine de Fatima", rating: "4.9", dish: "Couscous maison", price: "350 DA", color: "#f9f0e6" },
@@ -356,6 +294,7 @@ function HeroSection() {
       padding: "120px 24px 80px",
       overflow: "hidden",
     }}>
+      {/* Subtle background blobs */}
       <div className="blob-a" style={{
         position: "absolute", top: "5%", left: "-10%",
         width: 700, height: 700, borderRadius: "50%",
@@ -380,6 +319,7 @@ function HeroSection() {
         position: "relative",
         zIndex: 1,
       }}>
+        {/* Left: text */}
         <div style={{ flex: "1 1 400px", maxWidth: 580 }}>
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -406,6 +346,7 @@ function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1 }}
           >
+            {/* Logo in hero for EN/FR, Arabic text for AR */}
             {lang === "ar" ? (
               <h1 style={{
                 fontSize: "clamp(52px, 9vw, 88px)",
@@ -453,6 +394,7 @@ function HeroSection() {
             {t.hero.description}
           </motion.p>
 
+          {/* App store badges */}
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
@@ -486,6 +428,7 @@ function HeroSection() {
           </motion.div>
         </div>
 
+        {/* Right: Phone mockup */}
         <motion.div
           initial={{ opacity: 0, x: 40 }}
           animate={{ opacity: 1, x: 0 }}
@@ -499,6 +442,7 @@ function HeroSection() {
         >
           <div style={{ position: "relative" }}>
             <PhoneMockup />
+            {/* Floating order badge */}
             <motion.div
               animate={{ y: [0, -8, 0] }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
@@ -518,6 +462,7 @@ function HeroSection() {
               <div style={{ fontSize: 12, fontWeight: 800, color: "#2C1810", marginTop: 2 }}>Couscous Kabyle</div>
               <div style={{ fontSize: 10, color: "#D32F2F", fontWeight: 700 }}>450 DA • En route</div>
             </motion.div>
+            {/* Floating rating badge */}
             <motion.div
               animate={{ y: [0, 8, 0] }}
               transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
@@ -719,6 +664,78 @@ function ProposeSection() {
     </section>
   );
 }
+
+const WILAYAS = [
+  { code: "01", en: "Adrar", ar: "أدرار" },
+  { code: "02", en: "Chlef", ar: "الشلف" },
+  { code: "03", en: "Laghouat", ar: "الأغواط" },
+  { code: "04", en: "Oum El Bouaghi", ar: "أم البواقي" },
+  { code: "05", en: "Batna", ar: "باتنة" },
+  { code: "06", en: "Bejaia", ar: "بجاية" },
+  { code: "07", en: "Biskra", ar: "بسكرة" },
+  { code: "08", en: "Bechar", ar: "بشار" },
+  { code: "09", en: "Blida", ar: "البليدة" },
+  { code: "10", en: "Bouira", ar: "البويرة" },
+  { code: "11", en: "Tamanrasset", ar: "تمنراست" },
+  { code: "12", en: "Tebessa", ar: "تبسة" },
+  { code: "13", en: "Tlemcen", ar: "تلمسان" },
+  { code: "14", en: "Tiaret", ar: "تيارت" },
+  { code: "15", en: "Tizi Ouzou", ar: "تيزي وزو" },
+  { code: "16", en: "Alger", ar: "الجزائر" },
+  { code: "17", en: "Djelfa", ar: "الجلفة" },
+  { code: "18", en: "Jijel", ar: "جيجل" },
+  { code: "19", en: "Setif", ar: "سطيف" },
+  { code: "20", en: "Saida", ar: "سعيدة" },
+  { code: "21", en: "Skikda", ar: "سكيكدة" },
+  { code: "22", en: "Sidi Bel Abbes", ar: "سيدي بلعباس" },
+  { code: "23", en: "Annaba", ar: "عنابة" },
+  { code: "24", en: "Guelma", ar: "قالمة" },
+  { code: "25", en: "Constantine", ar: "قسنطينة" },
+  { code: "26", en: "Medea", ar: "المدية" },
+  { code: "27", en: "Mostaganem", ar: "مستغانم" },
+  { code: "28", en: "M'sila", ar: "المسيلة" },
+  { code: "29", en: "Mascara", ar: "معسكر" },
+  { code: "30", en: "Ouargla", ar: "ورقلة" },
+  { code: "31", en: "Oran", ar: "وهران" },
+  { code: "32", en: "El Bayadh", ar: "البيض" },
+  { code: "33", en: "Illizi", ar: "إليزي" },
+  { code: "34", en: "Bordj Bou Arreridj", ar: "برج بوعريريج" },
+  { code: "35", en: "Boumerdes", ar: "بومرداس" },
+  { code: "36", en: "El Tarf", ar: "الطارف" },
+  { code: "37", en: "Tindouf", ar: "تندوف" },
+  { code: "38", en: "Tissemsilt", ar: "تيسمسيلت" },
+  { code: "39", en: "El Oued", ar: "الوادي" },
+  { code: "40", en: "Khenchela", ar: "خنشلة" },
+  { code: "41", en: "Souk Ahras", ar: "سوق أهراس" },
+  { code: "42", en: "Tipaza", ar: "تيبازة" },
+  { code: "43", en: "Mila", ar: "ميلة" },
+  { code: "44", en: "Ain Defla", ar: "عين الدفلى" },
+  { code: "45", en: "Naama", ar: "النعامة" },
+  { code: "46", en: "Ain Temouchent", ar: "عين تموشنت" },
+  { code: "47", en: "Ghardaia", ar: "غرداية" },
+  { code: "48", en: "Relizane", ar: "غليزان" },
+  { code: "49", en: "Timimoun", ar: "تيميمون" },
+  { code: "50", en: "Bordj Badji Mokhtar", ar: "برج باجي مختار" },
+  { code: "51", en: "Ouled Djellal", ar: "أولاد جلال" },
+  { code: "52", en: "Beni Abbes", ar: "بني عباس" },
+  { code: "53", en: "In Salah", ar: "عين صالح" },
+  { code: "54", en: "In Guezzam", ar: "عين قزام" },
+  { code: "55", en: "Touggourt", ar: "تقرت" },
+  { code: "56", en: "Djanet", ar: "جانت" },
+  { code: "57", en: "El M'Ghair", ar: "المغير" },
+  { code: "58", en: "El Meniaa", ar: "المنيعة" },
+  { code: "59", en: "Aflou", ar: "أفلو" },
+  { code: "60", en: "Barika", ar: "بريكة" },
+  { code: "61", en: "Ksar Chellala", ar: "قصر الشلالة" },
+  { code: "62", en: "Messaad", ar: "مسعد" },
+  { code: "63", en: "Ain Oussera", ar: "عين وسارة" },
+  { code: "64", en: "Boussaada", ar: "بوسعادة" },
+  { code: "65", en: "El Abiodh Sidi Cheikh", ar: "الأبيض سيدي الشيخ" },
+  { code: "66", en: "El Kantara", ar: "القنطرة" },
+  { code: "67", en: "Bir El Ater", ar: "بئر العاتر" },
+  { code: "68", en: "Ksar El Boukhari", ar: "قصر البخاري" },
+  { code: "69", en: "El Aricha", ar: "العريشة" },
+];
 
 function RegisterSection() {
   const { t, lang } = useLanguage();

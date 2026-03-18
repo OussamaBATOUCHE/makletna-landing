@@ -142,7 +142,7 @@ function PhoneMockup() {
         {/* Search bar */}
         <div style={{ padding: "10px 12px 6px" }}>
           <div style={{
-            background: "#f2ede7",
+            background: "#F8F0E4",
             borderRadius: 10,
             padding: "7px 10px",
             fontSize: 11,
@@ -293,19 +293,26 @@ function HeroSection() {
       justifyContent: "center",
       padding: "120px 24px 80px",
       overflow: "hidden",
+      background: "linear-gradient(160deg, #FEF8EE 0%, #FBF5EA 40%, #F5E8D8 100%)",
     }}>
-      {/* Subtle background blobs */}
+      {/* Warm background blobs */}
       <div className="blob-a" style={{
         position: "absolute", top: "5%", left: "-10%",
         width: 700, height: 700, borderRadius: "50%",
-        background: "radial-gradient(circle, rgba(211,47,47,0.07) 0%, transparent 70%)",
+        background: "radial-gradient(circle, rgba(211,47,47,0.12) 0%, transparent 70%)",
         filter: "blur(60px)", pointerEvents: "none",
       }} />
       <div className="blob-b" style={{
         position: "absolute", bottom: "0%", right: "-10%",
         width: 600, height: 600, borderRadius: "50%",
-        background: "radial-gradient(circle, rgba(255,160,80,0.07) 0%, transparent 70%)",
+        background: "radial-gradient(circle, rgba(244,197,130,0.18) 0%, transparent 70%)",
         filter: "blur(60px)", pointerEvents: "none",
+      }} />
+      <div className="blob-c" style={{
+        position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)",
+        width: 800, height: 500, borderRadius: "50%",
+        background: "radial-gradient(ellipse, rgba(255,200,120,0.10) 0%, transparent 70%)",
+        filter: "blur(80px)", pointerEvents: "none",
       }} />
 
       <div style={{
@@ -492,7 +499,7 @@ function FeaturesSection() {
   return (
     <section id="features" style={{
       padding: "100px 24px",
-      background: "#EDE3D8",
+      background: "linear-gradient(160deg, #FBF5EA 0%, #EDE3D8 100%)",
     }}>
       <div style={{ maxWidth: 1100, margin: "0 auto" }}>
         <FadeIn style={{ textAlign: "center", marginBottom: 56 }}>
@@ -555,7 +562,7 @@ function FeaturesSection() {
 function HowItWorksSection() {
   const { t, isRtl } = useLanguage();
   return (
-    <section id="how-it-works" style={{ padding: "100px 24px", background: "#E8DDD3" }}>
+    <section id="how-it-works" style={{ padding: "100px 24px", background: "linear-gradient(160deg, #F0E4D4 0%, #E4D6C4 100%)" }}>
       <div style={{ maxWidth: 1100, margin: "0 auto" }}>
         <FadeIn style={{ textAlign: "center", marginBottom: 64 }}>
           <span className="section-label">{t.howItWorks.sectionLabel}</span>
@@ -618,7 +625,7 @@ function HowItWorksSection() {
 function ProposeSection() {
   const { t } = useLanguage();
   return (
-    <section style={{ padding: "100px 24px", background: "rgba(44,24,16,0.02)" }}>
+    <section style={{ padding: "100px 24px", background: "linear-gradient(180deg, #FBF5EA 0%, #F0E4D4 100%)" }}>
       <div style={{ maxWidth: 900, margin: "0 auto" }}>
         <FadeIn>
           <div className="glass-strong" style={{ borderRadius: 28, padding: "52px 44px", textAlign: "center", position: "relative", overflow: "hidden" }}>
@@ -929,7 +936,7 @@ function Footer() {
     <footer style={{
       padding: "60px 24px 36px",
       borderTop: "1px solid rgba(44,24,16,0.08)",
-      background: "rgba(44,24,16,0.02)",
+      background: "linear-gradient(180deg, #FBF5EA 0%, #F0E4D4 100%)",
     }}>
       <div style={{
         maxWidth: 1100, margin: "0 auto",
@@ -1002,7 +1009,7 @@ function Footer() {
 
 export default function LandingPage() {
   return (
-    <div style={{ minHeight: "100vh", background: "#FCFCF7" }}>
+    <div style={{ minHeight: "100vh", background: "#FBF5EA" }}>
       <Navbar />
       <main>
         <HeroSection />

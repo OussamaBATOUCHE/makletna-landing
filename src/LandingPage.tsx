@@ -443,8 +443,8 @@ function RegisterSection() {
                   <label className="field-label">{t.form.role}</label>
                   <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
                     {[
-                      { value: "customer", label: t.form.roleCustomer },
-                      { value: "provider", label: t.form.roleProvider },
+                      { value: "customer", label: t.form.roleProvider1 },
+                      { value: "provider", label: t.form.roleProvider2 },
                     ].map(({ value, label }) => (
                       <button
                         key={value} type="button"

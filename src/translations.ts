@@ -4,94 +4,94 @@ export const translations = {
   en: {
     nav: {
       appName: "Makletna",
-      register: "Register Interest",
+      register: "Register your interest",
     },
     hero: {
-      badge: "Coming Soon",
-      headline: "Home-made food, from your neighbours.",
+      badge: "Coming soon",
+      headline: "Home-made food, now closer to you.",
       description:
-        "Makletna connects you with passionate home cooks in your area. Healthy, traditional Algerian meals — made from scratch, delivered fresh.",
-      cta: "Join the Waitlist",
+        "Makletna connects you with talented home cooks near you. Healthy, traditional Algerian meals — prepared with care and delivered fresh.",
+      cta: "Join the waitlist",
     },
     mainCards: [
       {
         icon: "utensils",
         title: "Authentic home cooking",
         description:
-          "Real Algerian dishes prepared from scratch by talented cooks in your neighbourhood.",
+          "Real Algerian dishes prepared by talented cooks near you, with fresh ingredients.",
       },
       {
         icon: "map-pin",
         title: "Cooks near you",
         description:
-          "Discover home chefs around the corner and order the meals you grew up loving.",
+          "Discover the home cooks around you and order the dishes you grew up loving.",
       },
     ],
     features: {
-      eyebrow: "All Features",
+      eyebrow: "All features",
       title: "Everything Makletna brings to your table.",
       subtitle:
-        "From browsing kitchens to sharing your favourite bite — one home-cooked experience, end to end.",
+        "From browsing kitchens to sharing your favourite dish — a complete home-cooked experience in a single app.",
       items: [
         {
           icon: "🍲",
           title: "Explore meals",
           description:
-            "Browse hundreds of authentic, home-cooked dishes — couscous, chakhchoukha, dolma and more.",
+            "Browse hundreds of authentic home-cooked dishes — couscous, chakhchoukha, dolma and more.",
         },
         {
           icon: "👩‍🍳",
           title: "Discover kitchens",
           description:
-            "Meet the home chefs behind every plate and follow the cooks you love.",
+            "Get to know the home cooks behind every dish and follow the ones you love.",
         },
         {
           icon: "🍽️",
           title: "Meeda",
           description:
-            "Gather around a shared family table — reserve your spot at a cook's Meeda and eat together.",
+            "Gather around a shared family table — reserve your spot at a cook's Meeda and share a meal together.",
         },
         {
           icon: "💬",
           title: "Adwak",
           description:
-            "Share your taste, post reviews and discover what your neighbours are loving right now.",
+            "Share your taste, post your reviews and discover the dishes your neighbours love.",
         },
         {
           icon: "📍",
           title: "Near you",
           description:
-            "Pickup or delivery from cooks just around the corner — fresh, fast and local.",
+            "Delivery or pickup straight from cooks in your neighbourhood — fresh, fast and local.",
         },
         {
           icon: "❤️",
           title: "Healthy & home-made",
           description:
-            "Real ingredients, traditional recipes, slow-cooked the way home food should be.",
+            "Real ingredients and traditional recipes, slow-cooked the way food is meant to be made at home.",
         },
       ],
     },
     founder: {
-      title: "A note from the founders",
-      body: "We grew up around tables full of warmth, stories and food made with care. Makletna is our way of bringing that same feeling — and the people behind it — closer to you.",
+      title: "A word from the founder",
+      body: "We grew up around tables full of warmth, stories and food prepared with love. Makletna is our way of bringing that feeling — and the people who create it — closer to you.",
     },
     form: {
-      sectionLabel: "Early Access",
-      title: "Be the First to Know",
+      sectionLabel: "Early access",
+      title: "Be the first to know",
       subtitle:
         "Register your interest now and get exclusive early access when we launch in Algiers.",
-      name: "Full Name",
+      name: "Full name",
       namePlaceholder: "Your name",
-      email: "Email Address",
-      emailPlaceholder: "your@email.com",
-      phone: "Phone Number (optional)",
+      email: "Email address",
+      emailPlaceholder: "example@email.com",
+      phone: "Phone number (optional)",
       phonePlaceholder: "+213 ...",
-      role: "I am a...",
-      roleCustomer: "Food Lover",
-      roleProvider: "Home Chef",
+      role: "I am...",
+      roleProvider1: "Professional chef",
+      roleProvider2: "Home cook",
       wilaya: "Wilaya",
       wilayaPlaceholder: "Select your wilaya",
-      submit: "Join the Waitlist",
+      submit: "Join the waitlist",
       submitting: "Submitting...",
       success: "You're on the list! 🎉",
       successMessage:
@@ -99,12 +99,12 @@ export const translations = {
       error: "Something went wrong. Please try again.",
     },
     footer: {
-      tagline: "Healthy Home-Made Food Near You",
-      contact: "Contact",
+      tagline: "Healthy home-made food near you",
+      contact: "Contact us",
       email: "contact@makletna.com",
-      social: "Follow Us",
+      social: "Follow us",
       instagram: "@makletna",
-      madeIn: "DZAIR MADE",
+      madeIn: "I am Algerian",
       rights: "All rights reserved.",
     },
   },
@@ -116,7 +116,7 @@ export const translations = {
     },
     hero: {
       badge: "قريباً",
-      headline: "الطعام المنزلي أقرب إليك الآن",
+      headline: "الطّعام المنزليّ أقرب إليك الآن",
       description:
         "ماكلتنا تربطك بطهاة منزليين موهوبين بالقرب منك. وجبات جزائرية صحية وتقليدية، مُعدّة بعناية وموصّلة طازجة.",
       cta: "انضم إلى قائمة الانتظار",
@@ -194,8 +194,8 @@ export const translations = {
       phone: "رقم الهاتف (اختياري)",
       phonePlaceholder: "+213 ...",
       role: "أنا...",
-      roleCustomer: "عاشق الطعام",
-      roleProvider: "طاهٍ منزلي",
+      roleProvider1: "طاهٍ محترف",
+      roleProvider2: "طاهٍ منزلي",
       wilaya: "الولاية",
       wilayaPlaceholder: "اختر ولايتك",
       submit: "انضم إلى قائمة الانتظار",
@@ -219,13 +219,13 @@ export const translations = {
   fr: {
     nav: {
       appName: "Makletna",
-      register: "S'inscrire",
+      register: "Manifester votre intérêt",
     },
     hero: {
-      badge: "Bientôt disponible",
-      headline: "La cuisine maison, par vos voisins.",
+      badge: "Bientôt",
+      headline: "La cuisine maison, désormais plus près de vous.",
       description:
-        "Makletna vous met en lien avec des cuisiniers passionnés près de chez vous. Des plats algériens sains et traditionnels — faits maison, livrés frais.",
+        "Makletna vous met en relation avec des cuisiniers maison talentueux près de chez vous. Des plats algériens sains et traditionnels — préparés avec soin et livrés frais.",
       cta: "Rejoindre la liste d'attente",
     },
     mainCards: [
@@ -233,80 +233,80 @@ export const translations = {
         icon: "utensils",
         title: "Cuisine maison authentique",
         description:
-          "De vrais plats algériens préparés avec soin par des cuisiniers talentueux de votre quartier.",
+          "De vrais plats algériens préparés par des cuisiniers talentueux près de chez vous, avec des ingrédients frais.",
       },
       {
         icon: "map-pin",
-        title: "Des cuisiniers proches",
+        title: "Des cuisiniers près de vous",
         description:
-          "Découvrez des chefs maison à deux pas et commandez les plats qui ont bercé votre enfance.",
+          "Découvrez les cuisiniers maison autour de vous et commandez les plats qui ont bercé votre enfance.",
       },
     ],
     features: {
       eyebrow: "Toutes les fonctionnalités",
       title: "Tout ce que Makletna apporte à votre table.",
       subtitle:
-        "Du choix des cuisines au partage de votre plat préféré — une expérience maison, du début à la fin.",
+        "Du choix des cuisines au partage de votre plat préféré — une expérience maison complète dans une seule application.",
       items: [
         {
           icon: "🍲",
           title: "Explorer les plats",
           description:
-            "Parcourez des centaines de plats maison authentiques — couscous, chakhchoukha, dolma et plus.",
+            "Parcourez des centaines de plats maison authentiques — couscous, chakhchoukha, dolma et bien plus.",
         },
         {
           icon: "👩‍🍳",
           title: "Découvrir les cuisines",
           description:
-            "Rencontrez les chefs maison derrière chaque plat et suivez ceux que vous aimez.",
+            "Faites connaissance avec les cuisiniers maison derrière chaque plat et suivez celles et ceux que vous aimez.",
         },
         {
           icon: "🍽️",
           title: "Meeda",
           description:
-            "Réunissez-vous autour d'une table familiale partagée — réservez votre place à la Meeda d'un cuisinier.",
+            "Réunissez-vous autour d'une table familiale partagée — réservez votre place à la Meeda d'un cuisinier et partagez le repas ensemble.",
         },
         {
           icon: "💬",
           title: "Adwak",
           description:
-            "Partagez votre goût, publiez vos avis et découvrez ce que vos voisins adorent en ce moment.",
+            "Partagez votre goût, publiez vos avis et découvrez les plats que vos voisins adorent.",
         },
         {
           icon: "📍",
           title: "Près de chez vous",
           description:
-            "Livraison ou retrait chez des cuisiniers du quartier — frais, rapide, local.",
+            "Livraison ou retrait directement chez des cuisiniers de votre quartier — frais, rapide et local.",
         },
         {
           icon: "❤️",
           title: "Sain & fait maison",
           description:
-            "De vrais ingrédients, des recettes traditionnelles, mijotées comme à la maison.",
+            "De vrais ingrédients et des recettes traditionnelles, mijotés comme on cuisine à la maison.",
         },
       ],
     },
     founder: {
-      title: "Un mot des fondateurs",
+      title: "Un mot du fondateur",
       body: "Nous avons grandi autour de tables pleines de chaleur, d'histoires et de plats préparés avec amour. Makletna, c'est notre façon de rapprocher ce sentiment — et celles et ceux qui le créent — de vous.",
     },
     form: {
-      sectionLabel: "Accès Anticipé",
-      title: "Soyez Parmi les Premiers",
+      sectionLabel: "Accès anticipé",
+      title: "Soyez le premier informé",
       subtitle:
-        "Inscrivez votre intérêt maintenant et obtenez un accès exclusif anticipé lors de notre lancement à Alger.",
-      name: "Nom Complet",
+        "Manifestez votre intérêt dès maintenant et bénéficiez d'un accès anticipé exclusif lors de notre lancement à Alger.",
+      name: "Nom complet",
       namePlaceholder: "Votre nom",
-      email: "Adresse Email",
-      emailPlaceholder: "votre@email.com",
-      phone: "Numéro de Téléphone (optionnel)",
+      email: "Adresse e-mail",
+      emailPlaceholder: "exemple@email.com",
+      phone: "Numéro de téléphone (optionnel)",
       phonePlaceholder: "+213 ...",
       role: "Je suis...",
-      roleCustomer: "Gourmand",
-      roleProvider: "Cuisinier Maison",
+      roleProvider1: "Chef professionnel",
+      roleProvider2: "Cuisinier maison",
       wilaya: "Wilaya",
       wilayaPlaceholder: "Sélectionnez votre wilaya",
-      submit: "Rejoindre la Liste d'Attente",
+      submit: "Rejoindre la liste d'attente",
       submitting: "Envoi en cours...",
       success: "Vous êtes sur la liste ! 🎉",
       successMessage:
@@ -314,12 +314,12 @@ export const translations = {
       error: "Une erreur s'est produite. Veuillez réessayer.",
     },
     footer: {
-      tagline: "Cuisine Maison Saine Près de Chez Vous",
-      contact: "Contact",
+      tagline: "Cuisine maison saine près de chez vous",
+      contact: "Nous contacter",
       email: "contact@makletna.com",
-      social: "Suivez-Nous",
+      social: "Suivez-nous",
       instagram: "@makletna",
-      madeIn: "DZAIR MADE",
+      madeIn: "Je suis Algérien",
       rights: "Tous droits réservés.",
     },
   },

@@ -73,7 +73,7 @@
 html { scroll-behavior: smooth; }
 
 body {
-  background: #FBF5EA;
+  background: #FDF9F0;
   color: #2C1810;
   font-family: 'Thmanyah Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -104,7 +104,7 @@ h1, h2, h3, h4, h5, h6, .font-display {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: rgba(251, 245, 234, 0.85);
+  background: rgba(253, 249, 240, 0.85);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(44, 24, 16, 0.06);
@@ -132,7 +132,7 @@ h1, h2, h3, h4, h5, h6, .font-display {
 }
 .lang-btn.is-active {
   background: #2C1810;
-  color: #FBF5EA;
+  color: #FDF9F0;
 }
 
 @media (max-width: 480px) {
@@ -188,7 +188,7 @@ h1, h2, h3, h4, h5, h6, .font-display {
 }
 .btn-pill--ghost:hover {
   background: #2C1810;
-  color: #FBF5EA;
+  color: #FDF9F0;
   border-color: #2C1810;
 }
 
@@ -198,7 +198,7 @@ h1, h2, h3, h4, h5, h6, .font-display {
   align-items: center;
   justify-content: center;
   padding: 110px 24px 60px;
-  background: #FBF5EA;
+  background: #FDF9F0;
 }
 .hero-eyebrow {
   display: inline-flex;
@@ -220,16 +220,22 @@ h1, h2, h3, h4, h5, h6, .font-display {
   background: #D32F2F;
 }
 .hero-headline {
-  font-size: clamp(28px, 5.2vw, 68px);
+  font-size: clamp(40px, 6vw, 76px);
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.035em;
   color: #2C1810;
   margin-bottom: 28px;
+}
+html[dir="rtl"] .hero-headline {
+  font-size: clamp(28px, 5.2vw, 68px);
   white-space: nowrap;
 }
 @media (max-width: 760px) {
   .hero-headline {
+    font-size: clamp(28px, 8vw, 44px);
+  }
+  html[dir="rtl"] .hero-headline {
     white-space: normal;
     font-size: clamp(28px, 8vw, 44px);
   }
@@ -246,7 +252,7 @@ h1, h2, h3, h4, h5, h6, .font-display {
 /* ── Main two cards ── */
 .main-cards {
   padding: 60px 24px;
-  background: #FBF5EA;
+  background: #FDF9F0;
 }
 @media (max-width: 760px) {
   .hero { padding: 100px 20px 48px; }
@@ -266,7 +272,7 @@ h1, h2, h3, h4, h5, h6, .font-display {
   .main-cards-grid { grid-template-columns: 1fr; }
 }
 .main-card {
-  background: #F4ECDD;
+  background: #fff;
   border: 1px solid rgba(44,24,16,0.06);
   border-radius: 28px;
   padding: 40px 36px 0;
@@ -336,7 +342,7 @@ h1, h2, h3, h4, h5, h6, .font-display {
 .card-phone-screen {
   width: 100%;
   height: 100%;
-  background: #FBF5EA;
+  background: #FDF9F0;
   border-radius: 26px;
   overflow: hidden;
   display: flex;
@@ -581,7 +587,7 @@ h1, h2, h3, h4, h5, h6, .font-display {
 /* ── All features section ── */
 .all-features {
   padding: 60px 24px;
-  background: #FBF5EA;
+  background: #FDF9F0;
 }
 .all-features-inner {
   max-width: 1180px;
@@ -618,7 +624,7 @@ h1, h2, h3, h4, h5, h6, .font-display {
   .all-features-grid { grid-template-columns: 1fr; }
 }
 .feature-tile {
-  background: #F4ECDD;
+  background: #fff;
   border: 1px solid rgba(44,24,16,0.06);
   border-radius: 22px;
   padding: 30px 28px;
@@ -629,8 +635,8 @@ h1, h2, h3, h4, h5, h6, .font-display {
 }
 .feature-tile:hover {
   transform: translateY(-3px);
-  background: #F7EFE0;
-  box-shadow: 0 14px 36px rgba(44,24,16,0.08);
+  background: #fff;
+  box-shadow: 0 14px 36px rgba(44,24,16,0.10);
 }
 .feature-tile-icon {
   width: 48px;
@@ -663,7 +669,7 @@ h1, h2, h3, h4, h5, h6, .font-display {
 /* ── Founder note ── */
 .founder {
   padding: 60px 24px;
-  background: #F4ECDD;
+  background: #fff;
   border-top: 1px solid rgba(44,24,16,0.05);
   border-bottom: 1px solid rgba(44,24,16,0.05);
 }
@@ -692,7 +698,7 @@ h1, h2, h3, h4, h5, h6, .font-display {
 /* ── Register section ── */
 .register {
   padding: 60px 24px;
-  background: #FBF5EA;
+  background: #FDF9F0;
 }
 .register-inner {
   max-width: 560px;
@@ -771,7 +777,7 @@ select.input-field {
 .site-footer {
   padding: 36px 28px 28px;
   border-top: 1px solid rgba(44,24,16,0.07);
-  background: #FBF5EA;
+  background: #FDF9F0;
 }
 .site-footer-row {
   max-width: 1100px;
@@ -796,7 +802,7 @@ select.input-field {
 }
 .social-link:hover {
   background: #2C1810;
-  color: #FBF5EA;
+  color: #FDF9F0;
   border-color: #2C1810;
 }
 .site-footer-meta {
@@ -813,5 +819,5 @@ select.input-field {
 
 /* Scrollbar */
 ::-webkit-scrollbar { width: 5px; }
-::-webkit-scrollbar-track { background: #FBF5EA; }
+::-webkit-scrollbar-track { background: #FDF9F0; }
 ::-webkit-scrollbar-thumb { background: rgba(44, 24, 16, 0.3); border-radius: 3px; }

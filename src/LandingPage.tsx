@@ -64,7 +64,11 @@ function PhoneStatusBar() {
 function PhoneAppHeader() {
   return (
     <div className="phone-appheader">
-      <img src={LOGO_URL} alt="" style={{ height: 13, filter: "brightness(0) invert(1)" }} />
+      <img
+        src={LOGO_URL}
+        alt=""
+        style={{ height: 13, filter: "brightness(0) invert(1)" }}
+      />
       <span className="phone-appheader-title">Makletna</span>
       <span style={{ flex: 1 }} />
       <span className="phone-appheader-icon">🔍</span>
@@ -79,24 +83,69 @@ function CardPhoneMockup({ variant }: { variant: "browse" | "map" }) {
   const fr = lang === "fr";
 
   const heroMeal = ar
-    ? { title: "كسكس بالخضرة", chef: "مطبخ فاطمة", price: "450 دج", rating: "4.9 ★" }
+    ? {
+        title: "كسكس بالخضرة",
+        chef: "مطبخ فاطمة",
+        price: "450 دج",
+        rating: "4.9 ★",
+      }
     : fr
-      ? { title: "Couscous Royal", chef: "Cuisine de Fatima", price: "450 DA", rating: "★ 4.9" }
-      : { title: "Royal Couscous", chef: "Fatima's Kitchen", price: "450 DA", rating: "★ 4.9" };
+      ? {
+          title: "Couscous Royal",
+          chef: "Cuisine de Fatima",
+          price: "450 DA",
+          rating: "★ 4.9",
+        }
+      : {
+          title: "Royal Couscous",
+          chef: "Fatima's Kitchen",
+          price: "450 DA",
+          rating: "★ 4.9",
+        };
 
   const rows = ar
     ? [
-        { img: FOOD.chakhchoukha, name: "شخشوخة", chef: "عمي حسين · 4.8 ★", price: "320 دج" },
-        { img: FOOD.bourek, name: "بوراك باللحم", chef: "لالة يمينة · 4.8 ★", price: "280 دج" },
+        {
+          img: FOOD.chakhchoukha,
+          name: "شخشوخة",
+          chef: "عمي حسين · 4.8 ★",
+          price: "320 دج",
+        },
+        {
+          img: FOOD.bourek,
+          name: "بوراك باللحم",
+          chef: "لالة يمينة · 4.8 ★",
+          price: "280 دج",
+        },
       ]
     : fr
       ? [
-          { img: FOOD.chakhchoukha, name: "Chakhchoukha", chef: "Ammi Hocine · ★ 4.8", price: "320 DA" },
-          { img: FOOD.bourek, name: "Bourek viande", chef: "Lala Yamina · ★ 4.8", price: "280 DA" },
+          {
+            img: FOOD.chakhchoukha,
+            name: "Chakhchoukha",
+            chef: "Ammi Hocine · ★ 4.8",
+            price: "320 DA",
+          },
+          {
+            img: FOOD.bourek,
+            name: "Bourek viande",
+            chef: "Lala Yamina · ★ 4.8",
+            price: "280 DA",
+          },
         ]
       : [
-          { img: FOOD.chakhchoukha, name: "Chakhchoukha", chef: "Ammi Hocine · ★ 4.8", price: "320 DA" },
-          { img: FOOD.bourek, name: "Meat Bourek", chef: "Lala Yamina · ★ 4.8", price: "280 DA" },
+          {
+            img: FOOD.chakhchoukha,
+            name: "Chakhchoukha",
+            chef: "Ammi Hocine · ★ 4.8",
+            price: "320 DA",
+          },
+          {
+            img: FOOD.bourek,
+            name: "Meat Bourek",
+            chef: "Lala Yamina · ★ 4.8",
+            price: "280 DA",
+          },
         ];
 
   const sheet = ar
@@ -145,8 +194,14 @@ function CardPhoneMockup({ variant }: { variant: "browse" | "map" }) {
               <div className="phone-map-road" style={{ top: "22%" }} />
               <div className="phone-map-road" style={{ top: "55%" }} />
               <div className="phone-map-road" style={{ top: "78%" }} />
-              <div className="phone-map-road phone-map-road--v" style={{ left: "28%" }} />
-              <div className="phone-map-road phone-map-road--v" style={{ left: "68%" }} />
+              <div
+                className="phone-map-road phone-map-road--v"
+                style={{ left: "28%" }}
+              />
+              <div
+                className="phone-map-road phone-map-road--v"
+                style={{ left: "68%" }}
+              />
 
               {/* Food-photo pins */}
               {[
@@ -155,7 +210,16 @@ function CardPhoneMockup({ variant }: { variant: "browse" | "map" }) {
                 { img: FOOD.chakhchoukha, top: "60%", left: "22%", size: 28 },
                 { img: FOOD.bourek, top: "70%", left: "62%", size: 26 },
               ].map((p, i) => (
-                <div key={i} className="phone-map-pin" style={{ top: p.top, left: p.left, width: p.size, height: p.size }}>
+                <div
+                  key={i}
+                  className="phone-map-pin"
+                  style={{
+                    top: p.top,
+                    left: p.left,
+                    width: p.size,
+                    height: p.size,
+                  }}
+                >
                   <img src={p.img} alt="" />
                 </div>
               ))}
@@ -191,8 +255,14 @@ function Topbar() {
   return (
     <header className="topbar">
       <div className="brand-lockup brand-lockup--header">
-        <img src={BRAND_MARK_URL} alt="" style={{ height: 56, objectFit: "contain" }} />
-        <span className="brand-wordmark brand-wordmark--header font-display">{t.nav.appName}</span>
+        <img
+          src={BRAND_MARK_URL}
+          alt=""
+          style={{ height: 56, objectFit: "contain" }}
+        />
+        <span className="brand-wordmark brand-wordmark--header font-display">
+          {t.nav.appName}
+        </span>
       </div>
 
       <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
@@ -202,7 +272,9 @@ function Topbar() {
               key={code}
               onClick={() => setLang(code)}
               className={`lang-btn ${lang === code ? "is-active" : ""}`}
-            >{label}</button>
+            >
+              {label}
+            </button>
           ))}
         </div>
         <a href="#register" className="btn-pill btn-pill--ghost">
@@ -355,7 +427,13 @@ const WILAYAS = [
 
 function RegisterSection() {
   const { t, lang } = useLanguage();
-  const [form, setForm] = useState({ name: "", email: "", role: "customer" as "customer" | "provider", phone: "", wilaya: "" });
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    role: "customer" as "customer" | "provider",
+    phone: "",
+    wilaya: "",
+  });
   const [submitting, setSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState("");
@@ -406,27 +484,48 @@ function RegisterSection() {
           <div className="register-card">
             {success ? (
               <div style={{ textAlign: "center", padding: "20px 0" }}>
-                <div style={{
-                  width: 64, height: 64, borderRadius: "50%",
-                  background: "rgba(46,125,50,0.08)", border: "1.5px solid rgba(46,125,50,0.2)",
-                  display: "flex", alignItems: "center", justifyContent: "center",
-                  margin: "0 auto 20px", color: "#2E7D32",
-                }}>
+                <div
+                  style={{
+                    width: 64,
+                    height: 64,
+                    borderRadius: "50%",
+                    background: "rgba(46,125,50,0.08)",
+                    border: "1.5px solid rgba(46,125,50,0.2)",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    margin: "0 auto 20px",
+                    color: "#2E7D32",
+                  }}
+                >
                   <CheckCircle2 size={30} />
                 </div>
-                <h3 style={{ fontSize: 22, fontWeight: 800, color: "#2C1810", marginBottom: 10 }}>
+                <h3
+                  style={{
+                    fontSize: 22,
+                    fontWeight: 800,
+                    color: "#2C1810",
+                    marginBottom: 10,
+                  }}
+                >
                   {t.form.success}
                 </h3>
-                <p style={{ fontSize: 14.5, color: "#7A5C50", lineHeight: 1.65 }}>
+                <p
+                  style={{ fontSize: 14.5, color: "#7A5C50", lineHeight: 1.65 }}
+                >
                   {t.form.successMessage}
                 </p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+              <form
+                onSubmit={handleSubmit}
+                style={{ display: "flex", flexDirection: "column", gap: 16 }}
+              >
                 <div>
                   <label className="field-label">{t.form.name}</label>
                   <input
-                    className="input-field" type="text"
+                    className="input-field"
+                    type="text"
                     placeholder={t.form.namePlaceholder}
                     value={form.name}
                     onChange={(e) => setForm({ ...form, name: e.target.value })}
@@ -436,34 +535,55 @@ function RegisterSection() {
                 <div>
                   <label className="field-label">{t.form.email}</label>
                   <input
-                    className="input-field" type="email" dir="ltr"
+                    className="input-field"
+                    type="email"
+                    dir="ltr"
                     placeholder={t.form.emailPlaceholder}
                     value={form.email}
-                    onChange={(e) => setForm({ ...form, email: e.target.value })}
+                    onChange={(e) =>
+                      setForm({ ...form, email: e.target.value })
+                    }
                     required
                   />
                 </div>
                 <div>
                   <label className="field-label">{t.form.role}</label>
-                  <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
+                  <div
+                    style={{
+                      display: "grid",
+                      gridTemplateColumns: "1fr 1fr",
+                      gap: 10,
+                    }}
+                  >
                     {[
                       { value: "customer", label: t.form.roleProvider1 },
                       { value: "provider", label: t.form.roleProvider2 },
                     ].map(({ value, label }) => (
                       <button
-                        key={value} type="button"
-                        onClick={() => setForm({ ...form, role: value as "customer" | "provider" })}
+                        key={value}
+                        type="button"
+                        onClick={() =>
+                          setForm({
+                            ...form,
+                            role: value as "customer" | "provider",
+                          })
+                        }
                         className={`role-btn ${form.role === value ? "is-active" : ""}`}
-                      >{label}</button>
+                      >
+                        {label}
+                      </button>
                     ))}
                   </div>
                 </div>
                 <div>
                   <label className="field-label">{t.form.wilaya}</label>
                   <select
-                    className="input-field" dir="ltr"
+                    className="input-field"
+                    dir="ltr"
                     value={form.wilaya}
-                    onChange={(e) => setForm({ ...form, wilaya: e.target.value })}
+                    onChange={(e) =>
+                      setForm({ ...form, wilaya: e.target.value })
+                    }
                     style={{ cursor: "pointer" }}
                   >
                     <option value="">{t.form.wilayaPlaceholder}</option>
@@ -477,21 +597,36 @@ function RegisterSection() {
                 <div>
                   <label className="field-label">{t.form.phone}</label>
                   <input
-                    className="input-field" type="tel" dir="ltr"
+                    className="input-field"
+                    type="tel"
+                    dir="ltr"
                     placeholder={t.form.phonePlaceholder}
                     value={form.phone}
-                    onChange={(e) => setForm({ ...form, phone: e.target.value })}
+                    onChange={(e) =>
+                      setForm({ ...form, phone: e.target.value })
+                    }
                   />
                 </div>
                 {error && (
-                  <div style={{
-                    background: "rgba(211,47,47,0.06)", border: "1px solid rgba(211,47,47,0.2)",
-                    borderRadius: 10, padding: "10px 14px", fontSize: 13, color: "#D32F2F",
-                  }}>
+                  <div
+                    style={{
+                      background: "rgba(211,47,47,0.06)",
+                      border: "1px solid rgba(211,47,47,0.2)",
+                      borderRadius: 10,
+                      padding: "10px 14px",
+                      fontSize: 13,
+                      color: "#D32F2F",
+                    }}
+                  >
                     {error}
                   </div>
                 )}
-                <button type="submit" disabled={submitting} className="btn-pill btn-pill--primary" style={{ marginTop: 6, width: "100%" }}>
+                <button
+                  type="submit"
+                  disabled={submitting}
+                  className="btn-pill btn-pill--primary"
+                  style={{ marginTop: 6, width: "100%" }}
+                >
                   {submitting ? t.form.submitting : t.form.submit}
                 </button>
               </form>
@@ -521,40 +656,89 @@ function Footer() {
   const { t } = useLanguage();
   const year = new Date().getFullYear();
   const socialLinks = [
-    { icon: <FaInstagram size={16} />, href: "https://instagram.com/makletna", label: "Instagram" },
-    { icon: <FaFacebook size={16} />, href: "https://facebook.com/makletna", label: "Facebook" },
-    { icon: <FaXTwitter size={16} />, href: "https://x.com/makletna", label: "X (Twitter)" },
-    { icon: <FaTiktok size={16} />, href: "https://tiktok.com/@makletna", label: "TikTok" },
+    {
+      icon: <FaInstagram size={16} />,
+      href: "https://instagram.com/in.makletna",
+      label: "Instagram",
+    },
+    {
+      icon: <FaFacebook size={16} />,
+      href: "https://facebook.com/fb.makletna",
+      label: "Facebook",
+    },
+    {
+      icon: <FaXTwitter size={16} />,
+      href: "https://x.com/makletna",
+      label: "X (Twitter)",
+    },
+    {
+      icon: <FaTiktok size={16} />,
+      href: "https://tiktok.com/@makletna",
+      label: "TikTok",
+    },
   ];
 
   return (
     <footer className="site-footer">
       <div className="site-footer-row">
-        <div style={{ display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap" }}>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: 12,
+            flexWrap: "wrap",
+          }}
+        >
           <div className="brand-lockup brand-lockup--footer">
-            <img src={BRAND_MARK_URL} alt="" style={{ height: 44, objectFit: "contain" }} />
-            <span className="brand-wordmark brand-wordmark--footer font-display">{t.nav.appName}</span>
+            <img
+              src={BRAND_MARK_URL}
+              alt=""
+              style={{ height: 44, objectFit: "contain" }}
+            />
+            <span className="brand-wordmark brand-wordmark--footer font-display">
+              {t.nav.appName}
+            </span>
           </div>
-          <span style={{ fontSize: 13, color: "#7A5C50" }}>{t.footer.tagline}</span>
+          <span style={{ fontSize: 13, color: "#7A5C50" }}>
+            {t.footer.tagline}
+          </span>
         </div>
 
-        <div style={{ display: "flex", alignItems: "center", gap: 18, flexWrap: "wrap" }}>
-          <a href={`mailto:${t.footer.email}`} style={{ color: "#7A5C50", fontSize: 13, textDecoration: "none" }}>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: 18,
+            flexWrap: "wrap",
+          }}
+        >
+          <a
+            href={`mailto:${t.footer.email}`}
+            style={{ color: "#7A5C50", fontSize: 13, textDecoration: "none" }}
+          >
             {t.footer.email}
           </a>
           <div style={{ display: "flex", gap: 8 }}>
             {socialLinks.map(({ icon, href, label }) => (
               <a
-                key={label} href={href} target="_blank" rel="noopener noreferrer"
-                aria-label={label} className="social-link"
-              >{icon}</a>
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={label}
+                className="social-link"
+              >
+                {icon}
+              </a>
             ))}
           </div>
         </div>
       </div>
 
       <div className="site-footer-meta">
-        <span>© {year} Makletna. {t.footer.rights}</span>
+        <span>
+          © {year} Makletna. {t.footer.rights}
+        </span>
         <span>{t.footer.madeIn}</span>
       </div>
     </footer>

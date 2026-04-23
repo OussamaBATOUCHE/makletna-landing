@@ -68,6 +68,25 @@
   font-weight: 700; font-style: normal; font-display: swap;
 }
 
+.brand-lockup {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+}
+.brand-lockup--header .brand-wordmark { margin-inline-start: -10px; }
+.brand-lockup--footer .brand-wordmark { margin-inline-start: -8px; }
+.brand-wordmark {
+  font-family: 'Thmanyah Display', serif;
+  font-weight: 700;
+  color: #2C1810;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+.brand-wordmark--header { font-size: 28px; }
+.brand-wordmark--footer { font-size: 22px; }
+html[dir="rtl"] .brand-wordmark--header { font-size: 26px; }
+html[dir="rtl"] .brand-wordmark--footer { font-size: 22px; }
+
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 html { scroll-behavior: smooth; }

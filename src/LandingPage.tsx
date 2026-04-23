@@ -6,6 +6,7 @@ import { useLanguage } from "./LanguageContext";
 import type { Lang } from "./translations";
 
 const LOGO_URL = "/makletna-logo.png";
+const BRAND_MARK_URL = "/landing/makletna-spoon.png";
 
 const CARD_ICON_MAP: Record<string, React.ReactNode> = {
   utensils: <Utensils size={20} />,
@@ -189,7 +190,10 @@ function Topbar() {
 
   return (
     <header className="topbar">
-      <img src={LOGO_URL} alt="Makletna" style={{ height: 36, objectFit: "contain" }} />
+      <div className="brand-lockup brand-lockup--header">
+        <img src={BRAND_MARK_URL} alt="" style={{ height: 56, objectFit: "contain" }} />
+        <span className="brand-wordmark brand-wordmark--header font-display">{t.nav.appName}</span>
+      </div>
 
       <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
         <div className="lang-switch">
@@ -526,8 +530,11 @@ function Footer() {
   return (
     <footer className="site-footer">
       <div className="site-footer-row">
-        <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-          <img src={LOGO_URL} alt="Makletna" style={{ height: 28, objectFit: "contain" }} />
+        <div style={{ display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap" }}>
+          <div className="brand-lockup brand-lockup--footer">
+            <img src={BRAND_MARK_URL} alt="" style={{ height: 44, objectFit: "contain" }} />
+            <span className="brand-wordmark brand-wordmark--footer font-display">{t.nav.appName}</span>
+          </div>
           <span style={{ fontSize: 13, color: "#7A5C50" }}>{t.footer.tagline}</span>
         </div>
 

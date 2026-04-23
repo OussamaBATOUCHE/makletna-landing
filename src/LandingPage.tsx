@@ -73,10 +73,41 @@ function PhoneAppHeader() {
 }
 
 function CardPhoneMockup({ variant }: { variant: "browse" | "map" }) {
+  const { lang } = useLanguage();
+  const ar = lang === "ar";
+  const fr = lang === "fr";
+
+  const heroMeal = ar
+    ? { title: "كسكس بالخضرة", chef: "مطبخ فاطمة", price: "450 دج", rating: "4.9 ★" }
+    : fr
+      ? { title: "Couscous Royal", chef: "Cuisine de Fatima", price: "450 DA", rating: "★ 4.9" }
+      : { title: "Royal Couscous", chef: "Fatima's Kitchen", price: "450 DA", rating: "★ 4.9" };
+
+  const rows = ar
+    ? [
+        { img: FOOD.chakhchoukha, name: "شخشوخة", chef: "عمي حسين · 4.8 ★", price: "320 دج" },
+        { img: FOOD.bourek, name: "بوراك باللحم", chef: "لالة يمينة · 4.8 ★", price: "280 دج" },
+      ]
+    : fr
+      ? [
+          { img: FOOD.chakhchoukha, name: "Chakhchoukha", chef: "Ammi Hocine · ★ 4.8", price: "320 DA" },
+          { img: FOOD.bourek, name: "Bourek viande", chef: "Lala Yamina · ★ 4.8", price: "280 DA" },
+        ]
+      : [
+          { img: FOOD.chakhchoukha, name: "Chakhchoukha", chef: "Ammi Hocine · ★ 4.8", price: "320 DA" },
+          { img: FOOD.bourek, name: "Meat Bourek", chef: "Lala Yamina · ★ 4.8", price: "280 DA" },
+        ];
+
+  const sheet = ar
+    ? { name: "مطبخ فاطمة", meta: "4.9 ★ · 1.2 كم", cta: "عرض" }
+    : fr
+      ? { name: "Cuisine de Fatima", meta: "★ 4.9 · 1,2 km", cta: "Voir" }
+      : { name: "Fatima's Kitchen", meta: "★ 4.9 · 1.2 km", cta: "View" };
+
   return (
     <div className="card-phone">
       <div className="card-phone-notch" />
-      <div className="card-phone-screen">
+      <div className="card-phone-screen" dir={ar ? "rtl" : "ltr"}>
         <PhoneStatusBar />
         <PhoneAppHeader />
 
@@ -86,24 +117,21 @@ function CardPhoneMockup({ variant }: { variant: "browse" | "map" }) {
             <div className="phone-hero-meal">
               <img src={FOOD.couscous} alt="" />
               <div className="phone-hero-overlay">
-                <div className="phone-hero-badge">⭐ 4.9 · Halal</div>
-                <div className="phone-hero-title">Couscous Royal</div>
+                <div className="phone-hero-badge">{heroMeal.rating}</div>
+                <div className="phone-hero-title">{heroMeal.title}</div>
                 <div className="phone-hero-meta">
-                  <span>Cuisine de Fatima</span>
-                  <span className="phone-hero-price">450 DA</span>
+                  <span>{heroMeal.chef}</span>
+                  <span className="phone-hero-price">{heroMeal.price}</span>
                 </div>
               </div>
             </div>
             {/* Small meal rows */}
-            {[
-              { img: FOOD.chakhchoukha, name: "Chakhchoukha", chef: "Ammi Hocine", price: "320 DA" },
-              { img: FOOD.bourek, name: "Bourek viande", chef: "Lala Yamina", price: "280 DA" },
-            ].map((m, i) => (
+            {rows.map((m, i) => (
               <div key={i} className="phone-meal-row">
                 <img src={m.img} alt="" className="phone-meal-thumb" />
                 <div className="phone-meal-info">
                   <div className="phone-meal-name">{m.name}</div>
-                  <div className="phone-meal-chef">{m.chef} · ⭐ 4.8</div>
+                  <div className="phone-meal-chef">{m.chef}</div>
                 </div>
                 <div className="phone-meal-price">{m.price}</div>
               </div>
@@ -139,10 +167,10 @@ function CardPhoneMockup({ variant }: { variant: "browse" | "map" }) {
             <div className="phone-map-sheet">
               <img src={FOOD.couscous} alt="" className="phone-map-sheet-img" />
               <div className="phone-map-sheet-info">
-                <div className="phone-map-sheet-name">Cuisine de Fatima</div>
-                <div className="phone-map-sheet-meta">⭐ 4.9 · 1.2 km</div>
+                <div className="phone-map-sheet-name">{sheet.name}</div>
+                <div className="phone-map-sheet-meta">{sheet.meta}</div>
               </div>
-              <div className="phone-map-sheet-cta">Voir</div>
+              <div className="phone-map-sheet-cta">{sheet.cta}</div>
             </div>
           </div>
         )}

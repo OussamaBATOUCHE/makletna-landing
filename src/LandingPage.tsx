@@ -42,10 +42,10 @@ function FadeIn({
 
 /* ── Phone mockup that peeks from the bottom of the feature cards ── */
 const FOOD = {
-  couscous: "/food/couscous.png",
-  chakhchoukha: "/food/chakhchoukha.png",
-  dolma: "/food/dolma.png",
-  bourek: "/food/bourek.png",
+  couscous: "/food/couscous.webp",
+  chakhchoukha: "/food/chakhchoukha.webp",
+  dolma: "/food/dolma.webp",
+  bourek: "/food/bourek.webp",
 };
 
 function PhoneStatusBar() {

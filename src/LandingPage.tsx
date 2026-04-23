@@ -359,7 +359,7 @@ function HeroSection() {
                 fontSize: "clamp(52px, 9vw, 88px)",
                 fontWeight: 900, lineHeight: 1.02,
                 letterSpacing: "-0.03em", marginBottom: 8,
-                fontFamily: "'Playpen Sans Arabic', serif",
+                fontFamily: "'Thmanyah Display', 'Thmanyah Sans', serif",
                 color: "#2C1810",
               }}>
                 ماكلتنا

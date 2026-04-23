@@ -6,7 +6,7 @@ import { useLanguage } from "./LanguageContext";
 import type { Lang } from "./translations";
 
 const LOGO_URL = "/makletna-logo.png";
-const BRAND_MARK_URL = "/landing/makletna-spoon.png";
+const BRAND_MARK_URL = "/makletna-spoon.png";
 
 const CARD_ICON_MAP: Record<string, React.ReactNode> = {
   utensils: <Utensils size={20} />,
@@ -42,10 +42,10 @@ function FadeIn({
 
 /* ── Phone mockup that peeks from the bottom of the feature cards ── */
 const FOOD = {
-  couscous: "/landing/food/couscous.png",
-  chakhchoukha: "/landing/food/chakhchoukha.png",
-  dolma: "/landing/food/dolma.png",
-  bourek: "/landing/food/bourek.png",
+  couscous: "/food/couscous.png",
+  chakhchoukha: "/food/chakhchoukha.png",
+  dolma: "/food/dolma.png",
+  bourek: "/food/bourek.png",
 };
 
 function PhoneStatusBar() {

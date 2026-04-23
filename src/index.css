@@ -198,7 +198,7 @@ h1, h2, h3, h4, h5, h6, .font-display {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 140px 24px 90px;
+  padding: 140px 24px 100px;
   background: #FBF5EA;
 }
 .hero-eyebrow {
@@ -239,8 +239,15 @@ h1, h2, h3, h4, h5, h6, .font-display {
 
 /* ── Main two cards ── */
 .main-cards {
-  padding: 40px 24px 100px;
+  padding: 100px 24px;
   background: #FBF5EA;
+}
+@media (max-width: 760px) {
+  .hero { padding: 110px 20px 70px; }
+  .main-cards,
+  .all-features,
+  .founder,
+  .register { padding: 70px 20px; }
 }
 .main-cards-grid {
   max-width: 1100px;
@@ -567,7 +574,7 @@ h1, h2, h3, h4, h5, h6, .font-display {
 
 /* ── All features section ── */
 .all-features {
-  padding: 90px 24px 110px;
+  padding: 100px 24px;
   background: #FBF5EA;
 }
 .all-features-inner {
@@ -649,7 +656,7 @@ h1, h2, h3, h4, h5, h6, .font-display {
 
 /* ── Founder note ── */
 .founder {
-  padding: 80px 24px;
+  padding: 100px 24px;
   background: #F4ECDD;
   border-top: 1px solid rgba(44,24,16,0.05);
   border-bottom: 1px solid rgba(44,24,16,0.05);

@@ -600,7 +600,7 @@ function HowItWorksSection() {
                       flexDirection: isRtl ? "row-reverse" : "row",
                     }}>
                       <div style={{ flexShrink: 0 }}>
-                        <div className="step-number" data-no-digit-convert="" style={{ color: `${accent}20` }}>{step.step}</div>
+                        <div className="step-number" style={{ color: `${accent}20` }}>{step.step}</div>
                       </div>
                       <div style={{ paddingTop: 6 }}>
                         <h4 style={{ fontSize: 15, fontWeight: 800, color: "#2C1810", marginBottom: 5 }}>

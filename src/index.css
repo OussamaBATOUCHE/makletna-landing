@@ -194,11 +194,10 @@ h1, h2, h3, h4, h5, h6, .font-display {
 
 /* ── Hero ── */
 .hero {
-  min-height: calc(100vh - 70px);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 140px 24px 100px;
+  padding: 110px 24px 60px;
   background: #FBF5EA;
 }
 .hero-eyebrow {
@@ -221,12 +220,19 @@ h1, h2, h3, h4, h5, h6, .font-display {
   background: #D32F2F;
 }
 .hero-headline {
-  font-size: clamp(40px, 7vw, 84px);
+  font-size: clamp(28px, 5.2vw, 68px);
   font-weight: 700;
-  line-height: 1.05;
+  line-height: 1.1;
   letter-spacing: -0.035em;
   color: #2C1810;
   margin-bottom: 28px;
+  white-space: nowrap;
+}
+@media (max-width: 760px) {
+  .hero-headline {
+    white-space: normal;
+    font-size: clamp(28px, 8vw, 44px);
+  }
 }
 .hero-description {
   font-size: clamp(16px, 1.8vw, 19px);
@@ -239,15 +245,15 @@ h1, h2, h3, h4, h5, h6, .font-display {
 
 /* ── Main two cards ── */
 .main-cards {
-  padding: 100px 24px;
+  padding: 60px 24px;
   background: #FBF5EA;
 }
 @media (max-width: 760px) {
-  .hero { padding: 110px 20px 70px; }
+  .hero { padding: 100px 20px 48px; }
   .main-cards,
   .all-features,
   .founder,
-  .register { padding: 70px 20px; }
+  .register { padding: 48px 20px; }
 }
 .main-cards-grid {
   max-width: 1100px;
@@ -574,7 +580,7 @@ h1, h2, h3, h4, h5, h6, .font-display {
 
 /* ── All features section ── */
 .all-features {
-  padding: 100px 24px;
+  padding: 60px 24px;
   background: #FBF5EA;
 }
 .all-features-inner {
@@ -656,7 +662,7 @@ h1, h2, h3, h4, h5, h6, .font-display {
 
 /* ── Founder note ── */
 .founder {
-  padding: 100px 24px;
+  padding: 60px 24px;
   background: #F4ECDD;
   border-top: 1px solid rgba(44,24,16,0.05);
   border-bottom: 1px solid rgba(44,24,16,0.05);
@@ -685,7 +691,7 @@ h1, h2, h3, h4, h5, h6, .font-display {
 
 /* ── Register section ── */
 .register {
-  padding: 100px 24px;
+  padding: 60px 24px;
   background: #FBF5EA;
 }
 .register-inner {

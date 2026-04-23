@@ -213,7 +213,7 @@ function Hero() {
   const { t } = useLanguage();
   return (
     <section className="hero">
-      <FadeIn style={{ textAlign: "center", maxWidth: 880 }}>
+      <FadeIn style={{ textAlign: "center", maxWidth: 1200, width: "100%" }}>
         <span className="hero-eyebrow">
           <span className="hero-eyebrow-dot" />
           {t.hero.badge}

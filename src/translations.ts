@@ -30,20 +30,50 @@ export const translations = {
     features: {
       eyebrow: "All Features",
       title: "Everything Makletna brings to your table.",
-      subtitle: "From browsing kitchens to sharing your favourite bite — one home-cooked experience, end to end.",
+      subtitle:
+        "From browsing kitchens to sharing your favourite bite — one home-cooked experience, end to end.",
       items: [
-        { icon: "🍲", title: "Explore meals", description: "Browse hundreds of authentic, home-cooked dishes — couscous, chakhchoukha, dolma and more." },
-        { icon: "👩‍🍳", title: "Discover kitchens", description: "Meet the home chefs behind every plate and follow the cooks you love." },
-        { icon: "🍽️", title: "Meeda", description: "Gather around a shared family table — reserve your spot at a cook's Meeda and eat together." },
-        { icon: "💬", title: "Adwak", description: "Share your taste, post reviews and discover what your neighbours are loving right now." },
-        { icon: "📍", title: "Near you", description: "Pickup or delivery from cooks just around the corner — fresh, fast and local." },
-        { icon: "❤️", title: "Healthy & home-made", description: "Real ingredients, traditional recipes, slow-cooked the way home food should be." },
+        {
+          icon: "🍲",
+          title: "Explore meals",
+          description:
+            "Browse hundreds of authentic, home-cooked dishes — couscous, chakhchoukha, dolma and more.",
+        },
+        {
+          icon: "👩‍🍳",
+          title: "Discover kitchens",
+          description:
+            "Meet the home chefs behind every plate and follow the cooks you love.",
+        },
+        {
+          icon: "🍽️",
+          title: "Meeda",
+          description:
+            "Gather around a shared family table — reserve your spot at a cook's Meeda and eat together.",
+        },
+        {
+          icon: "💬",
+          title: "Adwak",
+          description:
+            "Share your taste, post reviews and discover what your neighbours are loving right now.",
+        },
+        {
+          icon: "📍",
+          title: "Near you",
+          description:
+            "Pickup or delivery from cooks just around the corner — fresh, fast and local.",
+        },
+        {
+          icon: "❤️",
+          title: "Healthy & home-made",
+          description:
+            "Real ingredients, traditional recipes, slow-cooked the way home food should be.",
+        },
       ],
     },
     founder: {
       title: "A note from the founders",
-      body:
-        "We grew up around tables full of warmth, stories and food made with care. Makletna is our way of bringing that same feeling — and the people behind it — closer to you.",
+      body: "We grew up around tables full of warmth, stories and food made with care. Makletna is our way of bringing that same feeling — and the people behind it — closer to you.",
     },
     form: {
       sectionLabel: "Early Access",
@@ -86,40 +116,71 @@ export const translations = {
     },
     hero: {
       badge: "قريباً",
-      headline: "طعام منزلي، من جيرانك.",
+      headline: "الطعام المنزلي أقرب إليك الآن",
       description:
-        "ماكلتنا تربطك بطهاة منزليين موهوبين في حيّك. وجبات جزائرية صحية وتقليدية، مُعدّة بعناية وموصّلة طازجة.",
+        "ماكلتنا تربطك بطهاة منزليين موهوبين بالقرب منك. وجبات جزائرية صحية وتقليدية، مُعدّة بعناية وموصّلة طازجة.",
       cta: "انضم إلى قائمة الانتظار",
     },
     mainCards: [
       {
         icon: "utensils",
         title: "طبخ منزلي أصيل",
-        description: "أطباق جزائرية حقيقية يحضّرها طهاة موهوبون في حيّك بمكوّنات طازجة.",
+        description:
+          "أطباق جزائرية حقيقية يحضّرها طهاة موهوبون بالقرب منك بمكوّنات طازجة.",
       },
       {
         icon: "map-pin",
         title: "طهاة قريبون منك",
-        description: "اكتشف الطهاة المنزليين حولك واطلب الأطباق التي نشأت على حبّها.",
+        description:
+          "اكتشف الطهاة المنزليين حولك واطلب الأطباق التي نشأت على حبّها.",
       },
     ],
     features: {
       eyebrow: "كل الميّزات",
       title: "كل ما تقدّمه ماكلتنا على مائدتك.",
-      subtitle: "من تصفّح المطابخ إلى مشاركة طبقك المفضّل — تجربة طعام منزلية متكاملة في تطبيق واحد.",
+      subtitle:
+        "من تصفّح المطابخ إلى مشاركة طبقك المفضّل — تجربة طعام منزلية متكاملة في تطبيق واحد.",
       items: [
-        { icon: "🍲", title: "استكشف الوجبات", description: "تصفّح مئات الأطباق المنزلية الأصيلة — كسكسي، شخشوخة، دولمة وأكثر." },
-        { icon: "👩‍🍳", title: "اكتشف المطابخ", description: "تعرّف على الطهاة المنزليين خلف كل طبق وتابع من تحب من بينهم." },
-        { icon: "🍽️", title: "ميدة", description: "اجتمع حول مائدة عائلية مشتركة — احجز مكانك على ميدة الطاهي وتناولوا الطعام معاً." },
-        { icon: "💬", title: "أذواق", description: "شارك ذوقك، اكتب آراءك واكتشف ما يحبّه جيرانك من أطباق." },
-        { icon: "📍", title: "قريب منك", description: "توصيل أو استلام من طهاة في حيّك مباشرةً — طازج وسريع ومحلّي." },
-        { icon: "❤️", title: "صحي ومنزلي", description: "مكوّنات حقيقية ووصفات تقليدية، مطبوخة على مهلٍ كما يُطهى الطعام في البيت." },
+        {
+          icon: "🍲",
+          title: "استكشف الوجبات",
+          description:
+            "تصفّح مئات الأطباق المنزلية الأصيلة — كسكس، شخشوخة، دولمة وأكثر.",
+        },
+        {
+          icon: "👩‍🍳",
+          title: "اكتشف المطابخ",
+          description:
+            "تعرّف على الطهاة المنزليين خلف كل طبق وتابع من تحب من بينهم.",
+        },
+        {
+          icon: "🍽️",
+          title: "ميدة",
+          description:
+            "اجتمع حول مائدة عائلية مشتركة — احجز مكانك على ميدة الطاهي وتناولوا الطعام معاً.",
+        },
+        {
+          icon: "💬",
+          title: "أذواق",
+          description: "شارك ذوقك، اكتب آراءك واكتشف ما يحبّه جيرانك من أطباق.",
+        },
+        {
+          icon: "📍",
+          title: "قريب منك",
+          description:
+            "توصيل أو استلام من طهاة في حيّك مباشرةً — طازج وسريع ومحلّي.",
+        },
+        {
+          icon: "❤️",
+          title: "صحي ومنزلي",
+          description:
+            "مكوّنات حقيقية ووصفات تقليدية، مطبوخة على مهلٍ كما يُطهى الطعام في البيت.",
+        },
       ],
     },
     founder: {
-      title: "كلمة من المؤسّسين",
-      body:
-        "كبرنا حول موائد مليئة بالدفء والحكايات والطعام المُحضَّر بمحبّة. ماكلتنا هي طريقتنا لتقريب هذا الإحساس — والأشخاص الذين يصنعونه — منك.",
+      title: "كلمة من المؤسّـس",
+      body: "كبرنا حول موائد مليئة بالدفء والحكايات والطعام المُحضَّر بمحبّة. ماكلتنا هي طريقتنا لتقريب هذا الإحساس — والأشخاص الذين يصنعونه — منك.",
     },
     form: {
       sectionLabel: "وصول مبكر",
@@ -150,7 +211,7 @@ export const translations = {
       email: "contact@makletna.com",
       social: "تابعنا",
       instagram: "@makletna",
-      madeIn: "DZAIR MADE",
+      madeIn: "أنا جزائري",
       rights: "جميع الحقوق محفوظة.",
     },
   },
@@ -184,20 +245,50 @@ export const translations = {
     features: {
       eyebrow: "Toutes les fonctionnalités",
       title: "Tout ce que Makletna apporte à votre table.",
-      subtitle: "Du choix des cuisines au partage de votre plat préféré — une expérience maison, du début à la fin.",
+      subtitle:
+        "Du choix des cuisines au partage de votre plat préféré — une expérience maison, du début à la fin.",
       items: [
-        { icon: "🍲", title: "Explorer les plats", description: "Parcourez des centaines de plats maison authentiques — couscous, chakhchoukha, dolma et plus." },
-        { icon: "👩‍🍳", title: "Découvrir les cuisines", description: "Rencontrez les chefs maison derrière chaque plat et suivez ceux que vous aimez." },
-        { icon: "🍽️", title: "Meeda", description: "Réunissez-vous autour d'une table familiale partagée — réservez votre place à la Meeda d'un cuisinier." },
-        { icon: "💬", title: "Adwak", description: "Partagez votre goût, publiez vos avis et découvrez ce que vos voisins adorent en ce moment." },
-        { icon: "📍", title: "Près de chez vous", description: "Livraison ou retrait chez des cuisiniers du quartier — frais, rapide, local." },
-        { icon: "❤️", title: "Sain & fait maison", description: "De vrais ingrédients, des recettes traditionnelles, mijotées comme à la maison." },
+        {
+          icon: "🍲",
+          title: "Explorer les plats",
+          description:
+            "Parcourez des centaines de plats maison authentiques — couscous, chakhchoukha, dolma et plus.",
+        },
+        {
+          icon: "👩‍🍳",
+          title: "Découvrir les cuisines",
+          description:
+            "Rencontrez les chefs maison derrière chaque plat et suivez ceux que vous aimez.",
+        },
+        {
+          icon: "🍽️",
+          title: "Meeda",
+          description:
+            "Réunissez-vous autour d'une table familiale partagée — réservez votre place à la Meeda d'un cuisinier.",
+        },
+        {
+          icon: "💬",
+          title: "Adwak",
+          description:
+            "Partagez votre goût, publiez vos avis et découvrez ce que vos voisins adorent en ce moment.",
+        },
+        {
+          icon: "📍",
+          title: "Près de chez vous",
+          description:
+            "Livraison ou retrait chez des cuisiniers du quartier — frais, rapide, local.",
+        },
+        {
+          icon: "❤️",
+          title: "Sain & fait maison",
+          description:
+            "De vrais ingrédients, des recettes traditionnelles, mijotées comme à la maison.",
+        },
       ],
     },
     founder: {
       title: "Un mot des fondateurs",
-      body:
-        "Nous avons grandi autour de tables pleines de chaleur, d'histoires et de plats préparés avec amour. Makletna, c'est notre façon de rapprocher ce sentiment — et celles et ceux qui le créent — de vous.",
+      body: "Nous avons grandi autour de tables pleines de chaleur, d'histoires et de plats préparés avec amour. Makletna, c'est notre façon de rapprocher ce sentiment — et celles et ceux qui le créent — de vous.",
     },
     form: {
       sectionLabel: "Accès Anticipé",

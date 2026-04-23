@@ -4,84 +4,42 @@ export const translations = {
   en: {
     nav: {
       appName: "Makletna",
-      features: "Features",
-      howItWorks: "How It Works",
       register: "Register Interest",
     },
     hero: {
       badge: "Coming Soon",
-      title: "Makletna",
-      arabicName: "ماكلتنا",
-      tagline: "Discover Home-Made Food Near You",
+      headline: "Home-made food, from your neighbours.",
       description:
-        "Makletna connects you with passionate home cooks in your neighbourhood. Healthy, traditional Algerian meals — made from scratch, delivered fresh to your door.",
+        "Makletna connects you with passionate home cooks in your area. Healthy, traditional Algerian meals — made from scratch, delivered fresh.",
       cta: "Join the Waitlist",
-      secondary: "Learn More",
-      comingSoon: "Coming soon on",
-      appTagline: "Will be available soon",
     },
+    mainCards: [
+      {
+        icon: "utensils",
+        title: "Authentic home cooking",
+        description:
+          "Real Algerian dishes prepared from scratch by talented cooks in your neighbourhood.",
+      },
+      {
+        icon: "map-pin",
+        title: "Cooks near you",
+        description:
+          "Discover home chefs around the corner and order the meals you grew up loving.",
+      },
+    ],
     features: {
-      sectionLabel: "Features",
-      title: "Everything You Need",
-      subtitle: "An app that brings healthy, home-made food from local cooks straight to you",
+      title: "Why Makletna",
       items: [
-        {
-          icon: "utensils",
-          title: "Authentic Home-Made Meals",
-          description:
-            "Enjoy healthy, home-cooked dishes prepared from scratch by talented local cooks using traditional Algerian recipes.",
-        },
-        {
-          icon: "map-pin",
-          title: "Find Home Cooks Near You",
-          description:
-            "Browse home cooks close to you on an interactive map and discover healthy traditional food hidden in your neighbourhood.",
-        },
-        {
-          icon: "package",
-          title: "Real-Time Order Tracking",
-          description:
-            "Follow your order from preparation to delivery with live status updates every step of the way.",
-        },
-        {
-          icon: "heart",
-          title: "Support Local Cooks",
-          description:
-            "Every order directly supports a local home chef, helping them build a sustainable culinary business.",
-        },
+        { icon: "🍲", title: "Healthy & traditional", description: "Wholesome recipes, fresh ingredients." },
+        { icon: "📍", title: "Hyper-local", description: "Cooks in your own neighbourhood." },
+        { icon: "📦", title: "Live tracking", description: "Follow your order in real time." },
+        { icon: "❤️", title: "Support local", description: "Every order helps a home chef thrive." },
       ],
     },
-    howItWorks: {
-      sectionLabel: "How It Works",
-      title: "Healthy, Traditional & Delicious",
-      subtitle: "Real home-made food from your neighbours — fresh, healthy, and full of flavour",
-      customers: {
-        title: "For Food Lovers",
-        steps: [
-          { step: "01", title: "Find Home Cooks Nearby", description: "Browse local home cooks near you and explore their healthy, traditional menus on the map or in a list." },
-          { step: "02", title: "Place Your Order", description: "Choose your meals, customise your order, and pay securely in-app." },
-          { step: "03", title: "Enjoy & Review", description: "Receive fresh, healthy home-made food and share your experience." },
-        ],
-      },
-      providers: {
-        title: "For Home Chefs",
-        steps: [
-          { step: "01", title: "List Your Home Cooking", description: "Create your profile, upload your healthy and traditional menu, and set your hours." },
-          { step: "02", title: "Accept Orders", description: "Receive orders from customers near you and manage them in real time." },
-          { step: "03", title: "Cook & Earn", description: "Prepare the wholesome meals you love and build a loyal community of regulars." },
-        ],
-      },
-    },
-    propose: {
-      sectionLabel: "Our Promise",
-      title: "What We Propose",
-      description:
-        "Makletna is built on a simple belief: the healthiest, most delicious food is made at home. We connect people who love to cook with people who crave real, traditional Algerian food — creating a community rooted in heritage and wellbeing.",
-      stats: [
-        { value: "100%", label: "Home-cooked" },
-        { value: "🇩🇿", label: "Made in Algeria" },
-        { value: "Soon", label: "Launching in Algiers" },
-      ],
+    founder: {
+      title: "A note from the founders",
+      body:
+        "We grew up around tables full of warmth, stories and food made with care. Makletna is our way of bringing that same feeling — and the people behind it — closer to you.",
     },
     form: {
       sectionLabel: "Early Access",
@@ -120,84 +78,40 @@ export const translations = {
   ar: {
     nav: {
       appName: "ماكلتنا",
-      features: "المميزات",
-      howItWorks: "كيف يعمل",
       register: "سجّل اهتمامك",
     },
     hero: {
       badge: "قريباً",
-      title: "ماكلتنا",
-      arabicName: "ماكلتنا",
-      tagline: "اكتشف الطعام المنزلي الصحي القريب منك",
+      headline: "طعام منزلي، من جيرانك.",
       description:
-        "ماكلتنا تربطك بطهاة منزليين موهوبين في حيّك. وجبات جزائرية صحية وتقليدية، مُعدّة بعناية من مكوّنات طازجة وموصّلة إلى بابك.",
+        "ماكلتنا تربطك بطهاة منزليين موهوبين في حيّك. وجبات جزائرية صحية وتقليدية، مُعدّة بعناية وموصّلة طازجة.",
       cta: "انضم إلى قائمة الانتظار",
-      secondary: "اعرف المزيد",
-      comingSoon: "قريباً على",
-      appTagline: "قريباً على متجري التطبيقات",
     },
+    mainCards: [
+      {
+        icon: "utensils",
+        title: "طبخ منزلي أصيل",
+        description: "أطباق جزائرية حقيقية يحضّرها طهاة موهوبون في حيّك بمكوّنات طازجة.",
+      },
+      {
+        icon: "map-pin",
+        title: "طهاة قريبون منك",
+        description: "اكتشف الطهاة المنزليين حولك واطلب الأطباق التي نشأت على حبّها.",
+      },
+    ],
     features: {
-      sectionLabel: "المميزات",
-      title: "كل ما تحتاجه",
-      subtitle: "تطبيق يجلب لك الطعام المنزلي الصحي من طهاة قريبين منك",
+      title: "لماذا ماكلتنا",
       items: [
-        {
-          icon: "utensils",
-          title: "وجبات منزلية صحية وأصيلة",
-          description:
-            "استمتع بأطباق منزلية صحية مُحضَّرة من مكوّنات طازجة بوصفات جزائرية تقليدية أصيلة.",
-        },
-        {
-          icon: "map-pin",
-          title: "ابحث عن طهاة قريبين منك",
-          description:
-            "تصفّح الطهاة المنزليين القريبين منك على خريطة تفاعلية واكتشف الطعام الصحي والتقليدي في حيّك.",
-        },
-        {
-          icon: "package",
-          title: "تتبّع طلبك لحظةً بلحظة",
-          description:
-            "تابع طلبك من التحضير حتى التوصيل مع تحديثات فورية في كل خطوة.",
-        },
-        {
-          icon: "heart",
-          title: "ادعم الطهاة المحليين",
-          description:
-            "كل طلب يدعم طاهياً منزلياً ويساعده على بناء مشروع طهوي مستدام.",
-        },
+        { icon: "🍲", title: "صحي وتقليدي", description: "وصفات أصيلة بمكوّنات طازجة." },
+        { icon: "📍", title: "قريب جداً", description: "طهاة في حيّك مباشرةً." },
+        { icon: "📦", title: "تتبّع مباشر", description: "تابع طلبك لحظةً بلحظة." },
+        { icon: "❤️", title: "ادعم المحلي", description: "كل طلب يساعد طاهياً منزلياً." },
       ],
     },
-    howItWorks: {
-      sectionLabel: "كيف يعمل",
-      title: "صحي وتقليدي ولذيذ",
-      subtitle: "طعام منزلي حقيقي من جيرانك — طازج وصحي ومليء بالنكهة",
-      customers: {
-        title: "لعشاق الطعام",
-        steps: [
-          { step: "1", title: "ابحث عن طهاة قريبين", description: "تصفّح الطهاة المنزليين القريبين منك واكتشف قوائمهم الصحية والتقليدية على الخريطة أو في القائمة." },
-          { step: "2", title: "اطلب وجبتك", description: "اختر وجباتك وخصّص طلبك وادفع بأمان داخل التطبيق." },
-          { step: "3", title: "استمتع وقيّم", description: "استلم طعامك المنزلي الطازج والصحي وشارك تجربتك." },
-        ],
-      },
-      providers: {
-        title: "للطهاة المنزليين",
-        steps: [
-          { step: "1", title: "سجّل وصفاتك المنزلية", description: "أنشئ ملفك التعريفي، أضف قائمتك الصحية والتقليدية وحدّد أوقات عملك." },
-          { step: "2", title: "استلم الطلبات", description: "استقبل طلبات العملاء القريبين منك وأدِرها في الوقت الفعلي." },
-          { step: "3", title: "اطبخ واربح", description: "حضّر الأطباق الشهية التي تحبها وابنِ مجتمعاً من الزبائن المخلصين." },
-        ],
-      },
-    },
-    propose: {
-      sectionLabel: "وعدنا",
-      title: "ما نقترحه",
-      description:
-        "ماكلتنا مبنية على قناعة بسيطة: أصحّ وأشهى طعام هو ما يُعدّ في المنزل. نربط المحبين للطبخ التقليدي بمن يشتهون طعاماً حقيقياً وصحياً — لنخلق مجتمعاً متجذراً في التراث الجزائري.",
-      stats: [
-        { value: "100%", label: "مطبوخ منزلياً" },
-        { value: "🇩🇿", label: "صنع في الجزائر" },
-        { value: "قريباً", label: "الإطلاق في الجزائر العاصمة" },
-      ],
+    founder: {
+      title: "كلمة من المؤسّسين",
+      body:
+        "كبرنا حول موائد مليئة بالدفء والحكايات والطعام المُحضَّر بمحبّة. ماكلتنا هي طريقتنا لتقريب هذا الإحساس — والأشخاص الذين يصنعونه — منك.",
     },
     form: {
       sectionLabel: "وصول مبكر",
@@ -236,84 +150,42 @@ export const translations = {
   fr: {
     nav: {
       appName: "Makletna",
-      features: "Fonctionnalités",
-      howItWorks: "Comment ça marche",
       register: "S'inscrire",
     },
     hero: {
       badge: "Bientôt disponible",
-      title: "Makletna",
-      arabicName: "ماكلتنا",
-      tagline: "Découvrez la cuisine maison saine près de chez vous",
+      headline: "La cuisine maison, par vos voisins.",
       description:
-        "Makletna vous connecte à des cuisiniers passionnés dans votre quartier. Des plats algériens sains et traditionnels — faits maison, livrés frais à votre porte.",
+        "Makletna vous met en lien avec des cuisiniers passionnés près de chez vous. Des plats algériens sains et traditionnels — faits maison, livrés frais.",
       cta: "Rejoindre la liste d'attente",
-      secondary: "En savoir plus",
-      comingSoon: "Bientôt sur",
-      appTagline: "Bientôt disponible",
     },
+    mainCards: [
+      {
+        icon: "utensils",
+        title: "Cuisine maison authentique",
+        description:
+          "De vrais plats algériens préparés avec soin par des cuisiniers talentueux de votre quartier.",
+      },
+      {
+        icon: "map-pin",
+        title: "Des cuisiniers proches",
+        description:
+          "Découvrez des chefs maison à deux pas et commandez les plats qui ont bercé votre enfance.",
+      },
+    ],
     features: {
-      sectionLabel: "Fonctionnalités",
-      title: "Tout ce dont vous avez besoin",
-      subtitle: "Une app qui vous propose de la cuisine maison saine, préparée par des cuisiniers proches de vous",
+      title: "Pourquoi Makletna",
       items: [
-        {
-          icon: "utensils",
-          title: "Repas Maison Sains & Authentiques",
-          description:
-            "Savourez des plats faits maison, sains et préparés avec des ingrédients frais selon des recettes algériennes traditionnelles.",
-        },
-        {
-          icon: "map-pin",
-          title: "Trouvez des Cuisiniers Près de Vous",
-          description:
-            "Parcourez les cuisiniers proches de vous sur une carte interactive et découvrez une cuisine saine et traditionnelle dans votre quartier.",
-        },
-        {
-          icon: "package",
-          title: "Suivi en Temps Réel",
-          description:
-            "Suivez votre commande de la préparation à la livraison avec des mises à jour en direct à chaque étape.",
-        },
-        {
-          icon: "heart",
-          title: "Soutenir les Cuisiniers Locaux",
-          description:
-            "Chaque commande soutient directement un cuisinier local et l'aide à développer son activité culinaire.",
-        },
+        { icon: "🍲", title: "Sain & traditionnel", description: "Des recettes vraies, des ingrédients frais." },
+        { icon: "📍", title: "Hyper-local", description: "Des cuisiniers dans votre propre quartier." },
+        { icon: "📦", title: "Suivi en direct", description: "Votre commande, en temps réel." },
+        { icon: "❤️", title: "Soutien local", description: "Chaque commande soutient un chef maison." },
       ],
     },
-    howItWorks: {
-      sectionLabel: "Comment ça marche",
-      title: "Sain, Traditionnel & Délicieux",
-      subtitle: "De la vraie cuisine maison par vos voisins — fraîche, saine et pleine de saveurs",
-      customers: {
-        title: "Pour les Gourmands",
-        steps: [
-          { step: "01", title: "Trouvez des Cuisiniers Proches", description: "Parcourez les cuisiniers maison près de chez vous et explorez leurs menus sains et traditionnels sur la carte ou en liste." },
-          { step: "02", title: "Passer Votre Commande", description: "Choisissez vos plats, personnalisez votre commande et payez en toute sécurité." },
-          { step: "03", title: "Déguster & Évaluer", description: "Recevez votre repas fait maison, sain et frais, et partagez votre expérience." },
-        ],
-      },
-      providers: {
-        title: "Pour les Cuisiniers Maison",
-        steps: [
-          { step: "01", title: "Proposez Votre Cuisine", description: "Créez votre profil, ajoutez vos plats sains et traditionnels et définissez vos horaires." },
-          { step: "02", title: "Accepter les Commandes", description: "Recevez des commandes de clients proches de vous et gérez-les en temps réel." },
-          { step: "03", title: "Cuisiner & Gagner", description: "Préparez les plats savoureux que vous aimez et fidélisez une communauté de clients." },
-        ],
-      },
-    },
-    propose: {
-      sectionLabel: "Notre Promesse",
-      title: "Ce Que Nous Proposons",
-      description:
-        "Makletna est fondée sur une conviction simple : la cuisine la plus saine et la plus savoureuse est celle du foyer. Nous connectons ceux qui aiment cuisiner avec ceux qui cherchent un repas vrai, traditionnel et sain — pour créer une communauté ancrée dans le patrimoine culinaire algérien.",
-      stats: [
-        { value: "100%", label: "Fait maison" },
-        { value: "🇩🇿", label: "Fait en Algérie" },
-        { value: "Bientôt", label: "Lancement à Alger" },
-      ],
+    founder: {
+      title: "Un mot des fondateurs",
+      body:
+        "Nous avons grandi autour de tables pleines de chaleur, d'histoires et de plats préparés avec amour. Makletna, c'est notre façon de rapprocher ce sentiment — et celles et ceux qui le créent — de vous.",
     },
     form: {
       sectionLabel: "Accès Anticipé",

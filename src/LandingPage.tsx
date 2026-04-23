@@ -40,70 +40,109 @@ function FadeIn({
 }
 
 /* ── Phone mockup that peeks from the bottom of the feature cards ── */
+const FOOD = {
+  couscous: "/landing/food/couscous.png",
+  chakhchoukha: "/landing/food/chakhchoukha.png",
+  dolma: "/landing/food/dolma.png",
+  bourek: "/landing/food/bourek.png",
+};
+
+function PhoneStatusBar() {
+  return (
+    <div className="phone-statusbar">
+      <span>9:41</span>
+      <span style={{ display: "flex", gap: 3, alignItems: "center" }}>
+        <span className="phone-sb-dot" />
+        <span className="phone-sb-dot" />
+        <span className="phone-sb-bar" />
+      </span>
+    </div>
+  );
+}
+
+function PhoneAppHeader() {
+  return (
+    <div className="phone-appheader">
+      <img src={LOGO_URL} alt="" style={{ height: 13, filter: "brightness(0) invert(1)" }} />
+      <span className="phone-appheader-title">Makletna</span>
+      <span style={{ flex: 1 }} />
+      <span className="phone-appheader-icon">🔍</span>
+      <span className="phone-appheader-icon">🛒</span>
+    </div>
+  );
+}
+
 function CardPhoneMockup({ variant }: { variant: "browse" | "map" }) {
   return (
     <div className="card-phone">
       <div className="card-phone-notch" />
       <div className="card-phone-screen">
-        <div style={{
-          background: "#D32F2F",
-          padding: "22px 12px 10px",
-          display: "flex", alignItems: "center", gap: 6,
-        }}>
-          <img src={LOGO_URL} alt="" style={{ height: 16, filter: "brightness(0) invert(1)" }} />
-          <span style={{ color: "#fff", fontSize: 10, fontWeight: 800 }}>Makletna</span>
-        </div>
+        <PhoneStatusBar />
+        <PhoneAppHeader />
 
         {variant === "browse" ? (
-          <div style={{ padding: "8px 10px", display: "flex", flexDirection: "column", gap: 6 }}>
-            {[
-              { name: "Cuisine de Fatima", dish: "Couscous maison", price: "350 DA" },
-              { name: "Chez Ammi Hocine", dish: "Chakhchoukha", price: "280 DA" },
-              { name: "Makla Taïb", dish: "Dolma & Bourek", price: "320 DA" },
-            ].map((k, i) => (
-              <div key={i} style={{
-                background: "#fff", borderRadius: 8, padding: 7,
-                display: "flex", alignItems: "center", gap: 7,
-                boxShadow: "0 1px 4px rgba(44,24,16,0.06)",
-              }}>
-                <div style={{
-                  width: 30, height: 30, borderRadius: 6,
-                  background: "#fde8e8", display: "flex",
-                  alignItems: "center", justifyContent: "center", fontSize: 14,
-                }}>🍽️</div>
-                <div style={{ flex: 1, minWidth: 0 }}>
-                  <div style={{ fontSize: 8.5, fontWeight: 800, color: "#2C1810", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{k.name}</div>
-                  <div style={{ fontSize: 7.5, color: "#9C7B6A", marginTop: 1 }}>{k.dish}</div>
+          <div className="phone-browse">
+            {/* Hero featured meal */}
+            <div className="phone-hero-meal">
+              <img src={FOOD.couscous} alt="" />
+              <div className="phone-hero-overlay">
+                <div className="phone-hero-badge">⭐ 4.9 · Halal</div>
+                <div className="phone-hero-title">Couscous Royal</div>
+                <div className="phone-hero-meta">
+                  <span>Cuisine de Fatima</span>
+                  <span className="phone-hero-price">450 DA</span>
                 </div>
-                <div style={{ fontSize: 8, color: "#D32F2F", fontWeight: 800 }}>{k.price}</div>
+              </div>
+            </div>
+            {/* Small meal rows */}
+            {[
+              { img: FOOD.chakhchoukha, name: "Chakhchoukha", chef: "Ammi Hocine", price: "320 DA" },
+              { img: FOOD.bourek, name: "Bourek viande", chef: "Lala Yamina", price: "280 DA" },
+            ].map((m, i) => (
+              <div key={i} className="phone-meal-row">
+                <img src={m.img} alt="" className="phone-meal-thumb" />
+                <div className="phone-meal-info">
+                  <div className="phone-meal-name">{m.name}</div>
+                  <div className="phone-meal-chef">{m.chef} · ⭐ 4.8</div>
+                </div>
+                <div className="phone-meal-price">{m.price}</div>
               </div>
             ))}
           </div>
         ) : (
-          <div style={{ padding: 8, position: "relative", flex: 1 }}>
-            <div style={{
-              borderRadius: 10,
-              background: "linear-gradient(135deg, #f5e8d8 0%, #fde8e8 100%)",
-              height: 170, position: "relative", overflow: "hidden",
-            }}>
-              {/* fake roads */}
-              <div style={{ position: "absolute", top: 30, left: 0, right: 0, height: 1.5, background: "rgba(44,24,16,0.10)" }} />
-              <div style={{ position: "absolute", top: 80, left: 0, right: 0, height: 1.5, background: "rgba(44,24,16,0.10)" }} />
-              <div style={{ position: "absolute", top: 130, left: 0, right: 0, height: 1.5, background: "rgba(44,24,16,0.10)" }} />
-              <div style={{ position: "absolute", top: 0, bottom: 0, left: 50, width: 1.5, background: "rgba(44,24,16,0.10)" }} />
-              <div style={{ position: "absolute", top: 0, bottom: 0, left: 110, width: 1.5, background: "rgba(44,24,16,0.10)" }} />
-              {/* pins */}
+          <div className="phone-map-wrap">
+            <div className="phone-map">
+              {/* subtle road grid */}
+              <div className="phone-map-road" style={{ top: "22%" }} />
+              <div className="phone-map-road" style={{ top: "55%" }} />
+              <div className="phone-map-road" style={{ top: "78%" }} />
+              <div className="phone-map-road phone-map-road--v" style={{ left: "28%" }} />
+              <div className="phone-map-road phone-map-road--v" style={{ left: "68%" }} />
+
+              {/* Food-photo pins */}
               {[
-                { top: 22, left: 30 }, { top: 60, left: 90 },
-                { top: 100, left: 40 }, { top: 130, left: 130 },
+                { img: FOOD.couscous, top: "12%", left: "18%", size: 32 },
+                { img: FOOD.dolma, top: "38%", left: "58%", size: 30 },
+                { img: FOOD.chakhchoukha, top: "60%", left: "22%", size: 28 },
+                { img: FOOD.bourek, top: "70%", left: "62%", size: 26 },
               ].map((p, i) => (
-                <div key={i} style={{
-                  position: "absolute", top: p.top, left: p.left,
-                  width: 18, height: 18, borderRadius: "50% 50% 50% 0",
-                  transform: "rotate(-45deg)", background: "#D32F2F",
-                  boxShadow: "0 2px 6px rgba(211,47,47,0.4)",
-                }} />
+                <div key={i} className="phone-map-pin" style={{ top: p.top, left: p.left, width: p.size, height: p.size }}>
+                  <img src={p.img} alt="" />
+                </div>
               ))}
+
+              {/* "you are here" dot */}
+              <div className="phone-map-me" />
+            </div>
+
+            {/* Bottom sheet card */}
+            <div className="phone-map-sheet">
+              <img src={FOOD.couscous} alt="" className="phone-map-sheet-img" />
+              <div className="phone-map-sheet-info">
+                <div className="phone-map-sheet-name">Cuisine de Fatima</div>
+                <div className="phone-map-sheet-meta">⭐ 4.9 · 1.2 km</div>
+              </div>
+              <div className="phone-map-sheet-cta">Voir</div>
             </div>
           </div>
         )}

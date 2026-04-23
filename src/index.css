@@ -257,7 +257,7 @@ h1, h2, h3, h4, h5, h6, .font-display {
   border: 1px solid rgba(44,24,16,0.06);
   border-radius: 28px;
   padding: 40px 36px 0;
-  height: 460px;
+  height: 540px;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -291,43 +291,278 @@ h1, h2, h3, h4, h5, h6, .font-display {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  height: 200px;
+  height: 280px;
   position: relative;
   overflow: hidden;
 }
 
 /* Card phone mockup */
 .card-phone {
-  width: 180px;
-  height: 320px;
-  background: #2C1810;
-  border-radius: 28px;
-  border: 5px solid #2C1810;
-  box-shadow: 0 18px 50px rgba(44,24,16,0.22);
+  width: 220px;
+  height: 400px;
+  background: #1a0f08;
+  border-radius: 32px;
+  border: 5px solid #1a0f08;
+  box-shadow: 0 22px 60px rgba(44,24,16,0.28), 0 0 0 1px rgba(0,0,0,0.4) inset;
   position: relative;
   overflow: hidden;
   flex-shrink: 0;
-  transform: translateY(50px);
+  transform: translateY(60px);
 }
 .card-phone-notch {
   position: absolute;
-  top: 8px;
+  top: 9px;
   left: 50%;
   transform: translateX(-50%);
-  width: 56px;
-  height: 16px;
-  background: #2C1810;
-  border-radius: 8px;
+  width: 70px;
+  height: 18px;
+  background: #1a0f08;
+  border-radius: 10px;
   z-index: 10;
 }
 .card-phone-screen {
   width: 100%;
   height: 100%;
   background: #FBF5EA;
-  border-radius: 22px;
+  border-radius: 26px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
+}
+
+/* Phone status bar (time + signal/battery) */
+.phone-statusbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 18px 4px;
+  font-size: 9px;
+  font-weight: 700;
+  color: #2C1810;
+}
+.phone-sb-dot {
+  width: 3px; height: 3px; border-radius: 50%;
+  background: #2C1810;
+}
+.phone-sb-bar {
+  width: 12px; height: 6px; border-radius: 2px;
+  background: #2C1810;
+  margin-left: 2px;
+}
+
+/* Phone in-app header (red bar) */
+.phone-appheader {
+  background: #D32F2F;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 0;
+}
+.phone-appheader-title {
+  color: #fff;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+.phone-appheader-icon {
+  color: #fff;
+  font-size: 9px;
+  opacity: 0.95;
+}
+
+/* Browse variant */
+.phone-browse {
+  padding: 8px 8px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+  overflow: hidden;
+}
+.phone-hero-meal {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 110px;
+  box-shadow: 0 4px 12px rgba(44,24,16,0.10);
+}
+.phone-hero-meal img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.phone-hero-overlay {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  padding: 8px 9px 7px;
+  background: linear-gradient(to top, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.0) 100%);
+  color: #fff;
+}
+.phone-hero-badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.95);
+  color: #2C1810;
+  font-size: 7px;
+  font-weight: 800;
+  padding: 2px 5px;
+  border-radius: 6px;
+  margin-bottom: 4px;
+}
+.phone-hero-title {
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 2px;
+}
+.phone-hero-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 8px;
+  opacity: 0.95;
+}
+.phone-hero-price {
+  background: #D32F2F;
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-weight: 800;
+  font-size: 8px;
+}
+.phone-meal-row {
+  background: #fff;
+  border-radius: 10px;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  box-shadow: 0 1px 3px rgba(44,24,16,0.06);
+}
+.phone-meal-thumb {
+  width: 32px;
+  height: 32px;
+  border-radius: 7px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.phone-meal-info { flex: 1; min-width: 0; }
+.phone-meal-name {
+  font-size: 9px;
+  font-weight: 800;
+  color: #2C1810;
+  line-height: 1.1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.phone-meal-chef {
+  font-size: 7.5px;
+  color: #9C7B6A;
+  margin-top: 2px;
+}
+.phone-meal-price {
+  font-size: 8.5px;
+  color: #D32F2F;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+/* Map variant */
+.phone-map-wrap {
+  flex: 1;
+  padding: 8px 8px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: relative;
+  overflow: hidden;
+}
+.phone-map {
+  flex: 1;
+  border-radius: 12px;
+  background:
+    radial-gradient(circle at 30% 30%, #fde8e8 0%, transparent 45%),
+    radial-gradient(circle at 75% 70%, #f5e8d8 0%, transparent 50%),
+    linear-gradient(135deg, #f1e7d4 0%, #f8efde 100%);
+  position: relative;
+  overflow: hidden;
+}
+.phone-map-road {
+  position: absolute;
+  left: 0; right: 0;
+  height: 1px;
+  background: rgba(44,24,16,0.10);
+}
+.phone-map-road--v {
+  top: 0; bottom: 0;
+  width: 1px; height: auto;
+  right: auto;
+}
+.phone-map-pin {
+  position: absolute;
+  border-radius: 50%;
+  border: 2.5px solid #fff;
+  box-shadow: 0 3px 8px rgba(44,24,16,0.30);
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+  background: #fff;
+}
+.phone-map-pin img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.phone-map-me {
+  position: absolute;
+  top: 48%; left: 42%;
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: #1976D2;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 5px rgba(25,118,210,0.20);
+  transform: translate(-50%, -50%);
+}
+.phone-map-sheet {
+  background: #fff;
+  border-radius: 12px;
+  margin: 0 0 8px;
+  padding: 7px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 12px rgba(44,24,16,0.12);
+}
+.phone-map-sheet-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.phone-map-sheet-info { flex: 1; min-width: 0; }
+.phone-map-sheet-name {
+  font-size: 9.5px;
+  font-weight: 800;
+  color: #2C1810;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.phone-map-sheet-meta {
+  font-size: 7.5px;
+  color: #9C7B6A;
+  margin-top: 2px;
+}
+.phone-map-sheet-cta {
+  background: #D32F2F;
+  color: #fff;
+  font-size: 8px;
+  font-weight: 800;
+  padding: 5px 9px;
+  border-radius: 8px;
+  flex-shrink: 0;
 }
 
 /* ── All features section ── */

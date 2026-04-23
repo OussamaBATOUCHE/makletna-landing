@@ -184,25 +184,27 @@ function MainCards() {
   );
 }
 
-function FeatureStrip() {
+function AllFeatures() {
   const { t } = useLanguage();
   return (
-    <section className="feature-strip">
-      <FadeIn>
-        <h2 className="feature-strip-title">{t.features.title}</h2>
-      </FadeIn>
-      <div className="feature-strip-grid">
-        {t.features.items.map((f, i) => (
-          <FadeIn key={i} delay={i * 0.05}>
-            <div className="feature-strip-item">
-              <div className="feature-strip-icon">{f.icon}</div>
-              <div>
-                <h4 className="feature-strip-name">{f.title}</h4>
-                <p className="feature-strip-desc">{f.description}</p>
-              </div>
-            </div>
-          </FadeIn>
-        ))}
+    <section id="features" className="all-features">
+      <div className="all-features-inner">
+        <FadeIn style={{ textAlign: "center", marginBottom: 56 }}>
+          <span className="hero-eyebrow">{t.features.eyebrow}</span>
+          <h2 className="all-features-title">{t.features.title}</h2>
+          <p className="all-features-subtitle">{t.features.subtitle}</p>
+        </FadeIn>
+        <div className="all-features-grid">
+          {t.features.items.map((f, i) => (
+            <FadeIn key={i} delay={i * 0.06}>
+              <article className="feature-tile">
+                <div className="feature-tile-icon">{f.icon}</div>
+                <h3 className="feature-tile-title">{f.title}</h3>
+                <p className="feature-tile-desc">{f.description}</p>
+              </article>
+            </FadeIn>
+          ))}
+        </div>
       </div>
     </section>
   );
@@ -492,7 +494,7 @@ export default function LandingPage() {
       <main>
         <Hero />
         <MainCards />
-        <FeatureStrip />
+        <AllFeatures />
         <FounderNote />
         <RegisterSection />
       </main>

@@ -836,6 +836,26 @@ select.input-field {
   color: #9C7B6A;
 }
 
+.site-footer-links {
+  max-width: 1100px;
+  margin: 18px auto 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px 20px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid rgba(44,24,16,0.06);
+}
+.footer-link {
+  font-size: 13px;
+  color: #7A5C50;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.footer-link:hover {
+  color: #2C1810;
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: #FDF9F0; }

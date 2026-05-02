@@ -735,6 +735,13 @@ function Footer() {
         </div>
       </div>
 
+      <div className="site-footer-links">
+        <a href="/terms" className="footer-link">{t.footer.links.terms}</a>
+        <a href="/contact" className="footer-link">{t.footer.links.contact}</a>
+        <a href="/partners" className="footer-link">{t.footer.links.partners}</a>
+        <a href="/invest" className="footer-link">{t.footer.links.invest}</a>
+      </div>
+
       <div className="site-footer-meta">
         <span>
           © {year} Makletna. {t.footer.rights}

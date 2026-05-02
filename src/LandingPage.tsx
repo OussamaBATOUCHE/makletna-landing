@@ -740,6 +740,7 @@ function Footer() {
         <a href="/contact" className="footer-link">{t.footer.links.contact}</a>
         <a href="/partners" className="footer-link">{t.footer.links.partners}</a>
         <a href="/invest" className="footer-link">{t.footer.links.invest}</a>
+        <span style={{ flex: 1 }} />
       </div>
 
       <div className="site-footer-meta">
